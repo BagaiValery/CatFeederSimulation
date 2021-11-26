@@ -1,0 +1,14 @@
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.Form1.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.LogsForm.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.ManualHandlingForm.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.TimetableForm.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.UserForm.resources
