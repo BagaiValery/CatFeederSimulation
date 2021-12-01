@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zymWxeLn79Q4vK9IG2ut3yqSugM7QaMYg4ljr6a39NlRw3pZCco7Vvzae/7McrZDpk6K78Thhxyfjq1wGRHjEQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\Model\\Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lerika\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}
