@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Model.Enity;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +11,22 @@ namespace Model
     interface IShceduleService
     {
         /// <summary>
-        /// Выбор расписания
+        /// Cоставление расписания.
         /// </summary>
-        public void ChooseSchedule();
+        public void AddSchedule(Schedule obj);
+        /// <summary>
+        /// Выбор расписания.
+        /// </summary>
+        public void ChooseSchedule(Schedule obj);
+        
+        /// <summary>
+        /// Экспорт расписания.
+        /// </summary>
+        public FileInfo ExportSchedule(Schedule obj);
 
+        /// <summary>
+        /// Импорт расписания.
+        /// </summary>
+        public Schedule ImportSchedule(FileInfo f);
     }
 }

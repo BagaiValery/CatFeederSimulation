@@ -8,27 +8,35 @@ namespace Model.Enity
 {
     public class Schedule
     {
-
-        private string NameOfFedder;
+        /// <summary>
+        /// Имя кормушки, в чьём расписании находимся.
+        /// </summary>
+        public string FeederName { get { return FeederName; } private set {; } }
         /// <summary>
         /// Количество корма по расписанию
         /// </summary>
-        private int MountOfFeed { get; set; }
+        public int MountOfFeed { get; set; }
         /// <summary>
         /// Массив времени кормёжки по расписанию
         /// </summary>
-        private List<DateTime> TimeToFeed { get; set; }
+        public List<DateTime> FeedTime { get; set; }
+
+        public void AddToTimeList(DateTime feedtime)
+        {
+            this.FeedTime.Add(feedtime);
+
+        }
 
         public Schedule(DateTime timeTofeed, int mountOffeed)
         {
-            this.TimeToFeed.Add(timeTofeed);
+            this.FeedTime.Add(timeTofeed);
             this.MountOfFeed = mountOffeed;
         }
 
         public Schedule()
         {
             this.MountOfFeed = 0;
-            this.TimeToFeed.Clear();
+            this.FeedTime.Clear();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Model
         /// </summary>
         /// <param name="obj">Добавляется объект нужного класса.</param>
         /// <returns></returns>
-        int AddRepository(T obj);
+        void AddRepository(T obj);
         /// <summary>
         /// Изменение данных в репозитории.
         /// </summary>

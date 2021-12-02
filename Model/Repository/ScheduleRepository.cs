@@ -5,21 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Model.Repositories
+namespace Model.Repository
 {
     public class ScheduleRepository : IRepository<Schedule>
     {
         public List<Schedule> ScheduleList = new List<Schedule>();
 
-
-        public int AddRepository(Schedule obj)
+        public void AddRepository(Schedule obj)
         {
             this.ScheduleList.Add(obj);
-        }
-
-        public void RemoveRepository(T obj)
-        {
-            this.ScheduleList.Clear(obj);
         }
 
         public void SaveRepository()
@@ -29,7 +23,13 @@ namespace Model.Repositories
 
         public void UpdateRepository(Schedule obj)
         {
-            throw new NotImplementedException();
+            if(Schedule)
+            this.ScheduleList
+        }
+
+        void IRepository<Schedule>.RemoveRepository(Schedule obj)
+        {
+            this.ScheduleList.Clear();
         }
     }
 }
