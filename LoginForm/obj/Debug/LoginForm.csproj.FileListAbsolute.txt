@@ -12,3 +12,8 @@ C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.LogsForm.
 C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.ManualHandlingForm.resources
 C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.TimetableForm.resources
 C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.UserForm.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.AdminForm.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.Feeders.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.NewFedder.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.RegistrateForm.resources
+C:\Users\Lerika\Documents\ТП\LoginForm\LoginForm\obj\Debug\LoginForm.Simulation.resources

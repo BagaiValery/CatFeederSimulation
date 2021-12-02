@@ -9,14 +9,17 @@ namespace Model.Repositories
 {
     public class ScheduleRepository : IRepository<Schedule>
     {
+        public List<Schedule> ScheduleList = new List<Schedule>();
+
+
         public int AddRepository(Schedule obj)
         {
-            throw new NotImplementedException();
+            this.ScheduleList.Add(obj);
         }
 
-        public void RemoveRepository(Schedule obj)
+        public void RemoveRepository(T obj)
         {
-            throw new NotImplementedException();
+            this.ScheduleList.Clear(obj);
         }
 
         public void SaveRepository()
