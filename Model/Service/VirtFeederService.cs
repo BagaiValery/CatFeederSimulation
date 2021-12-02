@@ -8,25 +8,29 @@ namespace Model.Service
 {
     class VirtFeederService : IFeederConnector
     {
-        private static int Tub = 0;
-        public static void TakeFromTub(int count)
-        {
-            Tub -= count;
-        }
-
-        private static int Bowl = 0;
+        private int Tub = 0;
+        private int Bowl;
         public void FeedNow(int amount)
         {
-            Bowl += amount;
+            if (Tub >= count)
+            {
+                Bowl += amount;
+                Tub -= count;
+            }
+            else
+                /*Send signal*/;
+            
             TakeFromTub(amount);
         }
-        public void SetSchedule(/*Schedule link*/)
+        public int EmptyBowl()
         {
-
+            if (Bowl > 0)
+            {
+                Bowl = 0;
+                return 0;
+            }
+            else return 1;  
         }
-        public void GetSchedule()
-        {
-
-        }
+        public Schedule MySchedule { get; set; }
     }
 }

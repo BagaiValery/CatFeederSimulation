@@ -9,7 +9,6 @@ namespace Model
     interface IFeederConnector
     {
         void FeedNow(int amount);
-        void SetSchedule(/*Schedule link*/);
-        void GetSchedule();
+        public Schedule MySchedule { get; set; }
     }
 }
