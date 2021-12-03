@@ -36,3 +36,23 @@ D:\Documents\Study\Feeder\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.
 D:\Documents\Study\Feeder\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
 D:\Documents\Study\Feeder\LoginForm\obj\Debug\LoginForm.exe
 D:\Documents\Study\Feeder\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.AdminForm.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.Feeders.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.Form1.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.LogsForm.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.ManualHandlingForm.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.NewFedder.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.RegistrateForm.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.Simulation.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.TimetableForm.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.UserForm.resources
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\EL LI\Desktop\Project\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.pdb

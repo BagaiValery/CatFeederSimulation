@@ -72,6 +72,7 @@ namespace LoginForm
             this.AddUser.TabIndex = 1;
             this.AddUser.Text = "Add new user";
             this.AddUser.UseVisualStyleBackColor = false;
+            this.AddUser.Click += new System.EventHandler(this.AddUser_Click);
             // 
             // RevieLogs
             // 
@@ -90,6 +91,7 @@ namespace LoginForm
             this.RevieLogs.TabIndex = 2;
             this.RevieLogs.Text = "Revie logs";
             this.RevieLogs.UseVisualStyleBackColor = false;
+            this.RevieLogs.Click += new System.EventHandler(this.RevieLogs_Click);
             // 
             // ListOfFeeders
             // 
@@ -109,6 +111,7 @@ namespace LoginForm
             this.ListOfFeeders.Text = "Feeders";
             this.ListOfFeeders.UseMnemonic = false;
             this.ListOfFeeders.UseVisualStyleBackColor = false;
+            this.ListOfFeeders.Click += new System.EventHandler(this.ListOfFeeders_Click);
             // 
             // AdminForm
             // 

@@ -12,6 +12,10 @@ namespace LoginForm
 {
     public partial class AdminForm : Form
     {
+        NewFedder nf = new NewFedder();
+        RegistrateForm rf = new RegistrateForm();
+        LogsForm lf = new LogsForm(); 
+        Feeders f = new Feeders();
         public AdminForm()
         {
             InitializeComponent();
@@ -19,12 +23,27 @@ namespace LoginForm
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void AddFedder_Click(object sender, EventArgs e)
         {
+            nf.Show();
+        }
 
+        private void AddUser_Click(object sender, EventArgs e)
+        {
+            rf.Show();
+        }
+
+        private void RevieLogs_Click(object sender, EventArgs e)
+        {
+            lf.Show();
+        }
+
+        private void ListOfFeeders_Click(object sender, EventArgs e)
+        {
+            f.Show();
         }
     }
 }

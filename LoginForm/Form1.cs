@@ -12,6 +12,8 @@ namespace LoginForm
 {
     public partial class Form1 : Form
     {
+        UserForm uf = new UserForm();
+        AdminForm af = new AdminForm();
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace LoginForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            af.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,7 +36,7 @@ namespace LoginForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            uf.Show();
         }
     }
 }

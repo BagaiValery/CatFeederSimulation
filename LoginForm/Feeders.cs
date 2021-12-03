@@ -16,5 +16,10 @@ namespace LoginForm
         {
             InitializeComponent();
         }
+
+        private void ReturnFromFeddersList_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

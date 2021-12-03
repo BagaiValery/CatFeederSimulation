@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "toQ8/ZqLfJM6dCnK7lsS9N36mZXu2ksxm4znykJf+f8uDZnDlLhh31ccF0FtYb+ILz03M7ckMDU0X8KpTsBHOQ==",
+  "dgSpecHash": "QR0JX1H5oHR6G729ogDnisu5uPcKv72zDlndzq9MTv6jY4E/j5byIG+KjjCdEYuvRhxzb3ki1KR6Rldp8Q5COA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\Model\\Model.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\EL LI\\Desktop\\Project\\CatFeederSimulation\\Model\\Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EL LI\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\EL LI\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\EL LI\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

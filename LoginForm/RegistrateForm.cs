@@ -16,5 +16,12 @@ namespace LoginForm
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string Name = NameBox.Text;
+            string Password = PasswordBox.Text;
+            labelr.Text = Name + " " + Password;
+        }
     }
 }

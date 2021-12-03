@@ -48,8 +48,9 @@ namespace LoginForm
             this.ManualHandling.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ManualHandling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ManualHandling.Location = new System.Drawing.Point(0, 0);
+            this.ManualHandling.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ManualHandling.Name = "ManualHandling";
-            this.ManualHandling.Size = new System.Drawing.Size(800, 77);
+            this.ManualHandling.Size = new System.Drawing.Size(533, 50);
             this.ManualHandling.TabIndex = 5;
             this.ManualHandling.Text = "Manual handling";
             this.ManualHandling.UseMnemonic = false;
@@ -67,13 +68,15 @@ namespace LoginForm
             this.Timetable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Timetable.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Timetable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Timetable.Location = new System.Drawing.Point(0, 77);
+            this.Timetable.Location = new System.Drawing.Point(0, 50);
+            this.Timetable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Timetable.Name = "Timetable";
-            this.Timetable.Size = new System.Drawing.Size(800, 77);
+            this.Timetable.Size = new System.Drawing.Size(533, 50);
             this.Timetable.TabIndex = 6;
             this.Timetable.Text = "Schedule";
             this.Timetable.UseMnemonic = false;
             this.Timetable.UseVisualStyleBackColor = false;
+            this.Timetable.Click += new System.EventHandler(this.Timetable_Click);
             // 
             // ListOfFeeders
             // 
@@ -86,13 +89,15 @@ namespace LoginForm
             this.ListOfFeeders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ListOfFeeders.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ListOfFeeders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ListOfFeeders.Location = new System.Drawing.Point(0, 154);
+            this.ListOfFeeders.Location = new System.Drawing.Point(0, 100);
+            this.ListOfFeeders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ListOfFeeders.Name = "ListOfFeeders";
-            this.ListOfFeeders.Size = new System.Drawing.Size(800, 77);
+            this.ListOfFeeders.Size = new System.Drawing.Size(533, 50);
             this.ListOfFeeders.TabIndex = 7;
             this.ListOfFeeders.Text = "Feeders";
             this.ListOfFeeders.UseMnemonic = false;
             this.ListOfFeeders.UseVisualStyleBackColor = false;
+            this.ListOfFeeders.Click += new System.EventHandler(this.ListOfFeeders_Click);
             // 
             // RevieLogs
             // 
@@ -105,24 +110,27 @@ namespace LoginForm
             this.RevieLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RevieLogs.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RevieLogs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.RevieLogs.Location = new System.Drawing.Point(0, 231);
+            this.RevieLogs.Location = new System.Drawing.Point(0, 150);
+            this.RevieLogs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RevieLogs.Name = "RevieLogs";
-            this.RevieLogs.Size = new System.Drawing.Size(800, 77);
+            this.RevieLogs.Size = new System.Drawing.Size(533, 50);
             this.RevieLogs.TabIndex = 8;
             this.RevieLogs.Text = "Revie logs";
             this.RevieLogs.UseMnemonic = false;
             this.RevieLogs.UseVisualStyleBackColor = false;
+            this.RevieLogs.Click += new System.EventHandler(this.RevieLogs_Click);
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.RevieLogs);
             this.Controls.Add(this.ListOfFeeders);
             this.Controls.Add(this.Timetable);
             this.Controls.Add(this.ManualHandling);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UserForm";
             this.Text = "UserForm";
             this.ResumeLayout(false);
