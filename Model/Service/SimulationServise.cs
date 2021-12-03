@@ -13,7 +13,7 @@ namespace Model.Service
         private static int TimeBoost = 1;
         private static int SimStop;
         //Feeder Database
-        public void StartSim()
+        public static void StartSim()
         {
             SimStop = 0;
             Cat Cat1 = new Cat("Barsik");
@@ -21,7 +21,7 @@ namespace Model.Service
             Thread ThreadSim = new Thread(new ThreadStart(SimEnvironment));
             ThreadSim.Start();
         }
-        public void StopSim()
+        public static void StopSim()
         {
             SimStop = 1;
         }
@@ -34,7 +34,7 @@ namespace Model.Service
                     if (Cat1.IsThereFood(Feeder1))
                         Cat1.Eat(Feeder1);
                     else
-                        Cat1.Meow(/*RealFeeder1*/);
+                        Cat1.Meow(/*Feeder*/);
                 }
                 if (TimeNow.Equals(Feeder1.GetSchedule()))
                 {
