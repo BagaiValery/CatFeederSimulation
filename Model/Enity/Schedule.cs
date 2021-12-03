@@ -23,13 +23,18 @@ namespace Model.Enity
 
         public void AddToTimeList(DateTime feedtime)
         {
+            DateTime nowDateTime = DateTime.Now;
+            DateTime TheLatestPossible = nowDateTime.AddDays(2);
+            if((feedtime > DateTime.Now) && (feedtime.Day <= TheLatestPossible.Day))
             this.FeedTime.Add(feedtime);
-
         }
 
-        public Schedule(DateTime timeTofeed, int mountOffeed)
+        public Schedule(DateTime feedtime, int mountOffeed)
         {
-            this.FeedTime.Add(timeTofeed);
+            DateTime nowDateTime = DateTime.Now;
+            DateTime TheLatestPossible = nowDateTime.AddDays(2);
+            if ((feedtime > DateTime.Now) && (feedtime.Day <= TheLatestPossible.Day))
+                this.FeedTime.Add(feedtime);
             this.MountOfFeed = mountOffeed;
         }
 
@@ -37,6 +42,11 @@ namespace Model.Enity
         {
             this.MountOfFeed = 0;
             this.FeedTime.Clear();
+        }
+
+        public Schedule ScheduleSet(string feederName, Schedule schedule)
+        {
+            return schedule;
         }
     }
 }
