@@ -14,7 +14,7 @@ namespace Model.Service
         public void AddSchedule(Schedule obj)
         {
             string FeederName = obj.FeederName;
-            int NumFeed = obj.MountOfFeed;
+            int NumFeed = obj.portion;
             List<DateTime> TimeFeed = obj.FeedTime;
         }
 
@@ -41,9 +41,9 @@ namespace Model.Service
             throw new NotImplementedException();
         }
 
-        public Schedule ScheduleSet(Feeder feeder, Schedule schedule)
+        public void SetSchedule(Feeder feeder, Schedule schedule)
         {
-
+            feeder.FeedingSchedule = schedule;
         }
     }
 }

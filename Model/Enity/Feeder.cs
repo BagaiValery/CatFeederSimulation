@@ -8,6 +8,7 @@ namespace Model.Enity
 {
     public class Feeder
     {
+        public int portion { get; set; }
         public Schedule FeedingSchedule { get; set; }
         public string FeederName { get; set; }
 

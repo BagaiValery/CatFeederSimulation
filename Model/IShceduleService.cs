@@ -18,17 +18,17 @@ namespace Model
         /// Выбор расписания.
         /// </summary>
         public void ChooseSchedule(Schedule obj);
-        
+
         /// <summary>
         /// Экспорт расписания.
         /// </summary>
-        public FileInfo ExportSchedule(Schedule obj);
+        public /*FileInfo*/ void ExportSchedule(Schedule obj, FileInfo textFile);
 
         /// <summary>
         /// Импорт расписания.
         /// </summary>
         public Schedule ImportSchedule(FileInfo f);
 
-        public Schedule ScheduleSet(Feeder feeder, Schedule schedule);
+        public void SetSchedule(Feeder feeder, Schedule schedule);
     }
 }

@@ -15,7 +15,7 @@ namespace Model.Enity
         /// <summary>
         /// Количество корма по расписанию
         /// </summary>
-        public int MountOfFeed { get; set; }
+        public int portion { get; set; }
         /// <summary>
         /// Массив времени кормёжки по расписанию
         /// </summary>
@@ -35,12 +35,12 @@ namespace Model.Enity
             DateTime TheLatestPossible = nowDateTime.AddDays(2);
             if ((feedtime > DateTime.Now) && (feedtime.Day <= TheLatestPossible.Day))
                 this.FeedTime.Add(feedtime);
-            this.MountOfFeed = mountOffeed;
+            this.portion = mountOffeed;
         }
 
         public Schedule()
         {
-            this.MountOfFeed = 0;
+            this.portion = 0;
             this.FeedTime.Clear();
         }
         
