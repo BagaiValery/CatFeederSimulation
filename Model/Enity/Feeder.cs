@@ -35,7 +35,6 @@ namespace Model.Enity
         }
         public void EmptyBowl()
         {
-            IsThisFeederEmpty(); 
             if (FoodInBowl > 0) FoodInBowl = 0;
             else throw new Exception("Что-то пошло не так: в миске нет корма");
         }
