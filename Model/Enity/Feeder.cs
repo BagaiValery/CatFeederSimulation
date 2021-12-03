@@ -18,21 +18,25 @@ namespace Model.Enity
 
         public int FoodInBowl { get; private set; }
 
-        public bool IsThisFeederEmpty(Feeder feeder)
+        public bool IsThisFeederEmpty()
         {
             bool Empty=false;
-            if (feeder.MountOfFood == 0)
+            if (MountOfFood == 0)
                 Empty = true;
-            if (feeder.MountOfFood < 0)
-                throw new Exception("Что-то пошло не так: в кармушке меньше корма, чем null");
+            if (MountOfFood < 0)
+                throw new Exception("Что-то пошло не так: в кормушке меньше корма, чем null");
             return Empty;
         }
-
-        public bool Feed(Feeder feeder, int portion)
+        public bool Feed(int portion)
         {
-            feeder.MountOfFood -= portion;
-            feeder.FoodInBowl += portion;
-            return IsThisFeederEmpty(feeder);
+            MountOfFood -= portion;
+            FoodInBowl += portion;
+            return IsThisFeederEmpty();
+        }
+        public void EmptyBowl()
+        {
+            if (FoodInBowl > 0) FoodInBowl = 0;
+            else Exception("Что-то пошло не так: в миске нет корма");
         }
     }
 }

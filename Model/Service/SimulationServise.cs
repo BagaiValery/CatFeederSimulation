@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
-using Model.Entity;
+using Model.Enity;
 
 namespace Model.Service
 {
@@ -16,7 +16,7 @@ namespace Model.Service
         public static void StartSim()
         {
             SimStop = 0;
-            Cat Cat1 = new Cat("Barsik");
+            CatService cat = new CatService("Barsik");
             //Feeder Database Access
             Thread ThreadSim = new Thread(new ThreadStart(SimEnvironment));
             ThreadSim.Start();
@@ -25,32 +25,31 @@ namespace Model.Service
         {
             SimStop = 1;
         }
-        public static void SimEnvironment()
+        private static void SimEnvironment()
         {
             while (SimStop == 0)
             {
-                if (TimeNow.Equals(Cat1.GetTimeToEat()))
+                if (TimeNow.Equals(Cat1.TimeToEat))
                 {
-                    if (Cat1.IsThereFood(Feeder1))
-                        Cat1.Eat(Feeder1);
-                    else
-                        Cat1.Meow(/*Feeder*/);
+                    Feeder feeder = new Feeder(); /*for (Through all feeders)*/
+                        cat.Eat(feeder);
+                        cat.ThisCat.TimeToEat.AddHours(12);
                 }
-                if (TimeNow.Equals(Feeder1.GetSchedule()))
-                {
-                    Feeder1.FullBowl();
-                }
+                Feeder feeder = new Feeder();/*for(Through all feeders)*/
+                    if (TimeNow.Equals(feeder.FeedingSchedule))
+                    {
+                        feeder.Feed(feeder.FeedingSchedule.portion);
+                    }
                 System.Threading.Thread.Sleep(1000 / TimeBoost);
-                TimeNow.PlusMin(1);
+                TimeNow.AddMinutes(1);
             }
         }
-        public int TimeBoostSet(int times)
+        public void TimeBoostSet(int times)
         {
             if (times < 1 || times > 1000)
-                return 1;
+                throw new Exception("Помедленнее!");
             else TimeBoost = times;
-            return 0;
         }
-        private static Time TimeNow = new Time();
+        private static DateTime TimeNow = new DateTime();
     }
 }
