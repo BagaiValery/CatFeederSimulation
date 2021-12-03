@@ -40,5 +40,10 @@ namespace Model.Service
         {
             throw new NotImplementedException();
         }
+
+        public Schedule ScheduleSet(Feeder feeder, Schedule schedule)
+        {
+
+        }
     }
 }

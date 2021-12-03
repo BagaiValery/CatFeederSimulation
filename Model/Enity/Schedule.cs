@@ -43,10 +43,6 @@ namespace Model.Enity
             this.MountOfFeed = 0;
             this.FeedTime.Clear();
         }
-
-        public Schedule ScheduleSet(string feederName, Schedule schedule)
-        {
-            return schedule;
-        }
+        
     }
 }

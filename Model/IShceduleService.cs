@@ -28,5 +28,7 @@ namespace Model
         /// Импорт расписания.
         /// </summary>
         public Schedule ImportSchedule(FileInfo f);
+
+        public Schedule ScheduleSet(Feeder feeder, Schedule schedule);
     }
 }
