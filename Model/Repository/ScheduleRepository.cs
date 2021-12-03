@@ -23,8 +23,8 @@ namespace Model.Repository
 
         public void UpdateRepository(Schedule obj)
         {
-            if(Schedule)
-            this.ScheduleList
+            if (obj != null)
+                this.ScheduleList.Add(obj);
         }
 
         void IRepository<Schedule>.RemoveRepository(Schedule obj)
