@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Model.Entity
+namespace Model.Enity
 {
     class Cat
     {

@@ -27,12 +27,17 @@ namespace Model.Enity
                 throw new Exception("Что-то пошло не так: в кармушке меньше корма, чем null");
             return Empty;
         }
-
-        public bool Feed(Feeder feeder, int portion)
+        public bool Feed(int portion)
         {
-            feeder.MountOfFood -= portion;
-            feeder.FoodInBowl += portion;
+            MountOfFood -= portion;
+            FoodInBowl += portion;
             return IsThisFeederEmpty();
+        }
+        public void EmptyBowl()
+        {
+            IsThisFeederEmpty(); 
+            if (FoodInBowl > 0) FoodInBowl = 0;
+            else throw new Exception("Что-то пошло не так: в миске нет корма");
         }
 
         public int MakeFull (int food)
