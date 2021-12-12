@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ELLI\\Desktop\\cat\\Model\\Model.csproj",
-      "projectName": "Model",
-      "projectPath": "C:\\Users\\ELLI\\Desktop\\cat\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\ELLI\\Desktop\\cat\\Presenters\\Presenters.csproj",
+      "projectName": "Presenters",
+      "projectPath": "C:\\Users\\ELLI\\Desktop\\cat\\Presenters\\Presenters.csproj",
       "packagesPath": "C:\\Users\\ELLI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ELLI\\Desktop\\cat\\Model\\obj\\",
+      "outputPath": "C:\\Users\\ELLI\\Desktop\\cat\\Presenters\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

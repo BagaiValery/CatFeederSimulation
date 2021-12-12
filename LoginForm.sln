@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\LoginForm.csproj", "{CFCDB7A8-7B9C-4A1C-8C6F-D5A10AAC4A83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{F0FB9600-F45C-43B5-88FE-155FF12DECE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{F0FB9600-F45C-43B5-88FE-155FF12DECE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presenters", "Presenters\Presenters.csproj", "{28506BE9-571D-45F0-952D-7420BCC30E5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{F0FB9600-F45C-43B5-88FE-155FF12DECE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0FB9600-F45C-43B5-88FE-155FF12DECE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0FB9600-F45C-43B5-88FE-155FF12DECE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28506BE9-571D-45F0-952D-7420BCC30E5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28506BE9-571D-45F0-952D-7420BCC30E5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28506BE9-571D-45F0-952D-7420BCC30E5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28506BE9-571D-45F0-952D-7420BCC30E5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
