@@ -12,6 +12,7 @@ namespace LoginForm
 {
     public partial class Form1 : Form
     {
+        Simulation sim = new Simulation();
         UserForm uf = new UserForm();
         AdminForm af = new AdminForm();
         public Form1()
@@ -37,6 +38,11 @@ namespace LoginForm
         private void button1_Click(object sender, EventArgs e)
         {
             uf.Show();
+        }
+
+        private void simulation_Click(object sender, EventArgs e)
+        {
+            sim.Show();
         }
     }
 }

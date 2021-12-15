@@ -11,6 +11,7 @@ namespace Model.Service
     class ScheduleService : IShceduleService
     {
         public Schedule schedule { get; }
+        private Feeder _feeder;
         public void AddSchedule(Schedule obj)
         {
             string FeederName = obj.FeederName;
