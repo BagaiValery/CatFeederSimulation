@@ -8,12 +8,12 @@ using Model.Enity;
 
 namespace Model.Service
 {
-    class SimulationServise
+    class SimulationServise : ISimulationServise
     {
         private static int TimeBoost = 1;
         private static int SimStop;
         //Feeder Database
-        public static void StartSim()
+        public void StartSim()
         {
             SimStop = 0;
             CatService cat = new CatService("Barsik");
@@ -21,7 +21,7 @@ namespace Model.Service
             Thread ThreadSim = new Thread(new ThreadStart(SimEnvironment));
             ThreadSim.Start();
         }
-        public static void StopSim()
+        public void StopSim()
         {
             SimStop = 1;
 

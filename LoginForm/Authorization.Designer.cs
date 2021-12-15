@@ -1,7 +1,7 @@
 ﻿
 namespace LoginForm
 {
-    partial class Form1
+    partial class Authorization
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@ namespace LoginForm
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Authorization));
             this.LoginUser = new System.Windows.Forms.Button();
             this.LoginAdmin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();

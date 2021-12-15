@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace LoginForm
 {
-    public partial class Form1 : Form
+    public partial class Authorization : Form
     {
         Simulation sim = new Simulation();
         UserForm uf = new UserForm();
         AdminForm af = new AdminForm();
-        public Form1()
+        public Authorization()
         {
             InitializeComponent();
         }
