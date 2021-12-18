@@ -39,9 +39,9 @@ namespace Model.Enity
             else throw new Exception("Что-то пошло не так: в миске нет корма");
         }
 
-        public int MakeFull (int food)
+        public int MakeFull ()
         {
-            MountOfFood = food;
+            MountOfFood = 500;
             return MountOfFood;
         }
     }

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginForm", "LoginForm\Logi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{F0FB9600-F45C-43B5-88FE-155FF12DECE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presenters", "Presenters\Presenters.csproj", "{28506BE9-571D-45F0-952D-7420BCC30E5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presenters", "Presenters\Presenters.csproj", "{28506BE9-571D-45F0-952D-7420BCC30E5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

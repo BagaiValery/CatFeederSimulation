@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace LoginForm
 {
-    public partial class RegistrateForm : Form
+    public partial class AuthUserForm : Form
     {
-        public RegistrateForm()
+        public AuthUserForm()
         {
             InitializeComponent();
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string Name = NameBox.Text;
-            string Password = PasswordBox.Text;
-            labelr.Text = Name + " " + Password;
-        }
-
     }
 }

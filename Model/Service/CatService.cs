@@ -13,15 +13,16 @@ namespace Model.Service
         public CatService(string CatName)
         {
             ThisCat.Name = CatName;
-            DateTime FeedTime = DateTime.Now;
-            FeedTime.AddHours(2);
-            ThisCat.TimeToEat = new DataTime(FeedTime);
+            ThisCat.TimeToEat = new DateTime();
+            ThisCat.TimeToEat = DateTime.Now;
+            ThisCat.TimeToEat.AddHours(2);
+
         }
         public void Eat(Feeder feeder)
         {
             if (feeder.IsThisFeederEmpty())
                 Meow(/*Feeder*/);
-            else feeder.EmptyBowl;
+            else feeder.EmptyBowl();
         }
         public void Meow(/*Feeder*/)
         {
