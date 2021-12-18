@@ -117,7 +117,6 @@ namespace LoginForm
             this.Controls.Add(this.NameBox);
             this.Controls.Add(this.panel1);
             this.Name = "AuthUserForm";
-            this.Text = "AuthUserForm";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
