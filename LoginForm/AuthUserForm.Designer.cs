@@ -104,6 +104,7 @@ namespace LoginForm
             this.EnterAuthbutton.TabIndex = 10;
             this.EnterAuthbutton.Text = "Enter";
             this.EnterAuthbutton.UseVisualStyleBackColor = true;
+            this.EnterAuthbutton.Click += new System.EventHandler(this.EnterAuthbutton_Click);
             // 
             // AuthUserForm
             // 
