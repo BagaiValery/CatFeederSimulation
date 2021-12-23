@@ -10,10 +10,10 @@ namespace Model.Service
 {
     class SimulationServise : ISimulationServise
     {
-        private static int TimeBoost = 1;
+        public static int TimeBoost { get; set; }
         private static int SimStop;
         //Feeder Database
-        public void StartSim()
+/*        public void StartSim()
         {
             SimStop = 0;
             CatService cat = new CatService("Barsik");
@@ -33,11 +33,11 @@ namespace Model.Service
             {
                 if (TimeNow.Equals(cat1.ThisCat.TimeToEat))
                 {
-                    Feeder feeder1 = new Feeder(); /*for (Through all feeders)*/
+                    Feeder feeder1 = new Feeder(); 
                         cat1.Eat(feeder1);
                         cat1.ThisCat.TimeToEat.AddHours(12);
                 }
-                Feeder feeder = new Feeder();/*for(Through all feeders)*/
+                Feeder feeder = new Feeder();
                     if (TimeNow.Equals(feeder.FeedingSchedule))
                     {
                         feeder.Feed(feeder.FeedingSchedule.portion);
@@ -46,6 +46,7 @@ namespace Model.Service
                 TimeNow.AddMinutes(1);
             }
         }
+*/
         public void TimeBoostSet(int times)
         {
             if (times < 1 || times > 1000)
