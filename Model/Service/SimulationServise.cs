@@ -12,13 +12,16 @@ namespace Model.Service
     {
         public static int TimeBoost { get; set; }
         private static int SimStop;
+<<<<<<< HEAD
         //Feeder Database
 /*        public void StartSim()
+=======
+ /*       public void StartSim()
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
         {
             SimStop = 0;
             CatService cat = new CatService("Barsik");
-            //Feeder Database Access
-            Thread ThreadSim = new Thread(new ThreadStart(SimEnvironment));
+            Task ThreadSim = new Task(new ThreadStart(SimEnvironment));
             ThreadSim.Start();
         }
         public void StopSim()
@@ -33,7 +36,11 @@ namespace Model.Service
             {
                 if (TimeNow.Equals(cat1.ThisCat.TimeToEat))
                 {
+<<<<<<< HEAD
                     Feeder feeder1 = new Feeder(); 
+=======
+                    Feeder feeder1 = new Feeder();
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
                         cat1.Eat(feeder1);
                         cat1.ThisCat.TimeToEat.AddHours(12);
                 }
@@ -53,6 +60,6 @@ namespace Model.Service
                 throw new Exception("Помедленнее!");
             else TimeBoost = times;
         }
-        private static DateTime TimeNow = new DateTime();
+        private static DateTime TimeNow = new DateTime(); */
     }
 }
