@@ -12,13 +12,11 @@ namespace Model.Service
     {
         private static int TimeBoost = 1;
         private static int SimStop;
-        //Feeder Database
-        public void StartSim()
+ /*       public void StartSim()
         {
             SimStop = 0;
             CatService cat = new CatService("Barsik");
-            //Feeder Database Access
-            Thread ThreadSim = new Thread(new ThreadStart(SimEnvironment));
+            Task ThreadSim = new Task(new ThreadStart(SimEnvironment));
             ThreadSim.Start();
         }
         public void StopSim()
@@ -33,11 +31,11 @@ namespace Model.Service
             {
                 if (TimeNow.Equals(cat1.ThisCat.TimeToEat))
                 {
-                    Feeder feeder1 = new Feeder(); /*for (Through all feeders)*/
+                    Feeder feeder1 = new Feeder();
                         cat1.Eat(feeder1);
                         cat1.ThisCat.TimeToEat.AddHours(12);
                 }
-                Feeder feeder = new Feeder();/*for(Through all feeders)*/
+                Feeder feeder = new Feeder();
                     if (TimeNow.Equals(feeder.FeedingSchedule))
                     {
                         feeder.Feed(feeder.FeedingSchedule.portion);
@@ -52,6 +50,6 @@ namespace Model.Service
                 throw new Exception("Помедленнее!");
             else TimeBoost = times;
         }
-        private static DateTime TimeNow = new DateTime();
+        private static DateTime TimeNow = new DateTime(); */
     }
 }
