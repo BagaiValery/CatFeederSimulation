@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using LoginForm.View;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,24 +12,36 @@ using System.Windows.Forms;
 
 namespace LoginForm
 {
-    public partial class AuthUserForm : Form
+    public partial class AuthUserForm : Form, IUser
     {
         public AuthUserForm()
         {
             InitializeComponent();
         }
 
+        public string LoginTxt {
+            get
+            { return NameBox.Text; }
+            set
+            { NameBox.Text = value; }
+        }
+        public string PassTxt
+        {
+            get
+            { return PasswordBox.Text; }
+            set
+            { PasswordBox.Text = value; }
+        }
+        public string Mess { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         private void EnterAuthbutton_Click(object sender, EventArgs e)
         {
-            String LoginUser = NameBox.Text;
-            String PassUser = PasswordBox.Text;
-            UserDB userdb = new UserDB();
-
-
-            if (FindUser(LoginUser, PassUser) > 0)
-                MessageBox.Show("All is ok");
+            LoginPresenter presenter = new LoginPresenter(this);
+            
+            if(presenter.MessFind() > 0)
+                MessageBox.Show("Пользователь найден");
             else
-                MessageBox.Show("User is lost or not be here");
+                MessageBox.Show("Пользователя не существует");
         }
     }
 }

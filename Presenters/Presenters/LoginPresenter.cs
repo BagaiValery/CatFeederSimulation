@@ -9,11 +9,34 @@ namespace Presenters.Presenters
 {
     class LoginPresenter
     {
-        ILoginView LoginView;
+        IUser LoginView;
 
-        public LoginPresenter(ILoginView view)
+        public LoginPresenter(IUser view)
         {
             LoginView = view;
+        }
+
+        public void FindUser()
+        {
+            UserDb user = new UserDb();
+        }
+
+        public void MessFind()
+        {
+            User user = new User();
+            user.Login = LoginView.LoginTxt;
+            user.Pass = LoginView.PassTxt;
+
+            LoginView.MessFind = user.MessFind().ToString();
+        }
+
+        public void MessAdd()
+        {
+            User user = new User();
+            user.Login = LoginView.LoginTxt;
+            user.Pass = LoginView.PassTxt;
+
+            LoginView.MessFind = user.MessAdd().ToString();
         }
     }
 }
