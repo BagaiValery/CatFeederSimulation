@@ -1,169 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "Microsoft.NETCore.Platforms/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
-      "Microsoft.NETCore.Targets/1.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard1.0/_._": {}
-        },
-        "runtime": {
-          "lib/netstandard1.0/_._": {}
-        }
-      },
+    ".NETFramework,Version=v5.0": {
       "Ninject/3.3.4": {
         "type": "package",
-        "dependencies": {
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Emit.Lightweight": "4.3.0"
-        },
         "compile": {
-          "lib/netstandard2.0/Ninject.dll": {}
+          "lib/net45/Ninject.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Ninject.dll": {}
+          "lib/net45/Ninject.dll": {}
         }
-      },
-      "System.IO/4.3.0": {
+      }
+    },
+    ".NETFramework,Version=v5.0/win7-x86": {
+      "Ninject/3.3.4": {
         "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0",
-          "System.Text.Encoding": "4.3.0",
-          "System.Threading.Tasks": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.5/System.IO.dll": {}
-        }
-      },
-      "System.Reflection/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.IO": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.5/System.Reflection.dll": {}
-        }
-      },
-      "System.Reflection.Emit.ILGeneration/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.0/System.Reflection.Emit.ILGeneration.dll": {}
+          "lib/net45/Ninject.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
+          "lib/net45/Ninject.dll": {}
         }
       },
-      "System.Reflection.Emit.Lightweight/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
+      "LoginForm/1.0.0": {
+        "type": "project",
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Emit.Lightweight.dll": {}
+          "bin/placeholder/LoginForm.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/System.Reflection.Emit.Lightweight.dll": {}
+          "bin/placeholder/LoginForm.dll": {}
         }
       },
-      "System.Reflection.Primitives/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Primitives.dll": {}
-        }
-      },
-      "System.Runtime/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0"
+          "bin/placeholder/Model.dll": {}
         },
-        "compile": {
-          "ref/netstandard1.5/System.Runtime.dll": {}
-        }
-      },
-      "System.Text.Encoding/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Text.Encoding.dll": {}
-        }
-      },
-      "System.Threading.Tasks/4.3.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "1.1.0",
-          "Microsoft.NETCore.Targets": "1.1.0",
-          "System.Runtime": "4.3.0"
-        },
-        "compile": {
-          "ref/netstandard1.3/System.Threading.Tasks.dll": {}
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-        "microsoft.netcore.platforms.nuspec",
-        "runtime.json"
-      ]
-    },
-    "Microsoft.NETCore.Targets/1.1.0": {
-      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
-      "type": "package",
-      "path": "microsoft.netcore.targets/1.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/netstandard1.0/_._",
-        "microsoft.netcore.targets.1.1.0.nupkg.sha512",
-        "microsoft.netcore.targets.nuspec",
-        "runtime.json"
-      ]
-    },
     "Ninject/3.3.4": {
       "sha512": "CmbWW97FfJuh4LEOVZM/spqXl4KAulRUjqeMwRd5J9rDMQArmIYaDMU3pyzXXHT062tbF0OPIMwI7tSOtprPfg==",
       "type": "package",
@@ -178,6 +58,7 @@
         "ninject.3.3.4.nupkg.sha512",
         "ninject.nuspec"
       ]
+<<<<<<< HEAD
     },
     "System.IO/4.3.0": {
       "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
@@ -715,40 +596,94 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "LoginForm/1.0.0": {
+      "type": "project",
+      "path": "../LoginForm/LoginForm.csproj",
+      "msbuildProject": "../LoginForm/LoginForm.csproj"
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "LoginForm >= 1.0.0",
+      "Model >= 1.0.0",
+=======
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v5.0": [
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
       "Ninject >= 3.3.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lerika\\.nuget\\packages\\": {}
+<<<<<<< HEAD
+    "C:\\Users\\EL LI\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\Artmas\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\Presenters\\Presenters.csproj",
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\Presenters\\Presenters.csproj",
       "projectName": "Presenters",
-      "projectPath": "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\Presenters\\Presenters.csproj",
-      "packagesPath": "C:\\Users\\Lerika\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\Presenters\\obj\\",
+      "projectPath": "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\Presenters\\Presenters.csproj",
+      "packagesPath": "C:\\Users\\EL LI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\Presenters\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Lerika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\EL LI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+=======
+      "projectUniqueName": "D:\\Documents\\Study\\Feeder\\CatFeederSimulation\\Presenters\\Presenters.csproj",
+      "projectName": "Presenters",
+      "projectPath": "D:\\Documents\\Study\\Feeder\\CatFeederSimulation\\Presenters\\Presenters.csproj",
+      "packagesPath": "C:\\Users\\Artmas\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Study\\Feeder\\CatFeederSimulation\\Presenters\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Artmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net50"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
+<<<<<<< HEAD
         "net5.0": {
           "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\LoginForm\\LoginForm.csproj": {
+              "projectPath": "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\LoginForm\\LoginForm.csproj"
+            },
+            "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\Model\\Model.csproj"
+            }
+          }
+=======
+        "net50": {
           "projectReferences": {}
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
         }
       },
       "warningProperties": {
@@ -758,13 +693,13 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net50": {
         "dependencies": {
           "Ninject": {
             "target": "Package",
             "version": "[3.3.4, )"
           }
+<<<<<<< HEAD
         },
         "imports": [
           "net461",
@@ -778,8 +713,20 @@
         "warn": true,
         "downloadDependencies": [
           {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
             "name": "Microsoft.NETCore.App.Host.win-x64",
             "version": "[5.0.12, 5.0.12]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[5.0.0, 5.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -788,6 +735,14 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+=======
+        }
+      }
+    },
+    "runtimes": {
+      "win7-x86": {
+        "#import": []
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
       }
     }
   }

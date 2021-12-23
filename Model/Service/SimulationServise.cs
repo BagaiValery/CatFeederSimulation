@@ -10,15 +10,18 @@ namespace Model.Service
 {
     class SimulationServise : ISimulationServise
     {
-        private static int TimeBoost = 1;
+        public static int TimeBoost { get; set; }
         private static int SimStop;
+<<<<<<< HEAD
         //Feeder Database
-        public void StartSim()
+/*        public void StartSim()
+=======
+ /*       public void StartSim()
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
         {
             SimStop = 0;
             CatService cat = new CatService("Barsik");
-            //Feeder Database Access
-            Thread ThreadSim = new Thread(new ThreadStart(SimEnvironment));
+            Task ThreadSim = new Task(new ThreadStart(SimEnvironment));
             ThreadSim.Start();
         }
         public void StopSim()
@@ -33,11 +36,15 @@ namespace Model.Service
             {
                 if (TimeNow.Equals(cat1.ThisCat.TimeToEat))
                 {
-                    Feeder feeder1 = new Feeder(); /*for (Through all feeders)*/
+<<<<<<< HEAD
+                    Feeder feeder1 = new Feeder(); 
+=======
+                    Feeder feeder1 = new Feeder();
+>>>>>>> c2734142e0200a69946967240fc985ec632ae35b
                         cat1.Eat(feeder1);
                         cat1.ThisCat.TimeToEat.AddHours(12);
                 }
-                Feeder feeder = new Feeder();/*for(Through all feeders)*/
+                Feeder feeder = new Feeder();
                     if (TimeNow.Equals(feeder.FeedingSchedule))
                     {
                         feeder.Feed(feeder.FeedingSchedule.portion);
@@ -46,12 +53,13 @@ namespace Model.Service
                 TimeNow.AddMinutes(1);
             }
         }
+*/
         public void TimeBoostSet(int times)
         {
             if (times < 1 || times > 1000)
                 throw new Exception("Помедленнее!");
             else TimeBoost = times;
         }
-        private static DateTime TimeNow = new DateTime();
+        private static DateTime TimeNow = new DateTime(); */
     }
 }

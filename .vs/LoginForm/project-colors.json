@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cfcdb7a8-7b9c-4a1c-8c6f-d5a10aac4a83": {
+      "ProjectGuid": "cfcdb7a8-7b9c-4a1c-8c6f-d5a10aac4a83",
+      "DisplayName": "LoginForm",
+      "ColorIndex": 0
+    },
+    "28506be9-571d-45f0-952d-7420bcc30e5d": {
+      "ProjectGuid": "28506be9-571d-45f0-952d-7420bcc30e5d",
+      "DisplayName": "Presenters",
+      "ColorIndex": 1
+    },
+    "f0fb9600-f45c-43b5-88fe-155ff12dece3": {
+      "ProjectGuid": "f0fb9600-f45c-43b5-88fe-155ff12dece3",
+      "DisplayName": "Model",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
