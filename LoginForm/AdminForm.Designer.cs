@@ -34,6 +34,7 @@ namespace LoginForm
             this.AddUser = new System.Windows.Forms.Button();
             this.RevieLogs = new System.Windows.Forms.Button();
             this.ListOfFeeders = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddFedder
@@ -113,9 +114,20 @@ namespace LoginForm
             this.ListOfFeeders.UseVisualStyleBackColor = false;
             this.ListOfFeeders.Click += new System.EventHandler(this.ListOfFeeders_Click);
             // 
+            // back
+            // 
+            this.back.Location = new System.Drawing.Point(703, 392);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(77, 28);
+            this.back.TabIndex = 9;
+            this.back.Text = "back";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.back_Click);
+            // 
             // AdminForm
             // 
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.ListOfFeeders);
             this.Controls.Add(this.RevieLogs);
             this.Controls.Add(this.AddUser);
@@ -136,6 +148,7 @@ namespace LoginForm
         private System.Windows.Forms.Button AddUser;
         private System.Windows.Forms.Button RevieLogs;
         private System.Windows.Forms.Button ListOfFeeders;
+        private System.Windows.Forms.Button back;
     }
 
 }

@@ -38,12 +38,12 @@ namespace LoginForm
 
         private void EnterAuthbutton_Click(object sender, EventArgs e)
         {
-            Presenters.Presenters.LoginPresenter presenter = new LoginPresenter(this);
+            //Presenters.Presenters.LoginPresenter presenter = new LoginPresenter(this);
             
-            if(presenter.MessFind() > 0)
-                MessageBox.Show("Пользователь найден");
-            else
-                MessageBox.Show("Пользователя не существует");
+            //if(presenter.MessFind() > 0)
+            //    MessageBox.Show("Пользователь найден");
+            //else
+            //    MessageBox.Show("Пользователя не существует");
         }
     }
 }

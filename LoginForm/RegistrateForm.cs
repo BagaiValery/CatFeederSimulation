@@ -1,12 +1,5 @@
 ﻿using LoginForm.View;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LoginForm
@@ -36,12 +29,13 @@ namespace LoginForm
         
         private void button1_Click(object sender, EventArgs e)
         {
-            LoginPresenter presenter = new LoginPresenter(this);
+            //LoginPresenter presenter = new LoginPresenter(this);
 
-            if (presenter.MessAdd() == 1)
-                MessageBox.Show("Аккаунт был создан");
-            else
-                MessageBox.Show("Возникли проблемы с созданием");
+            //if (presenter.MessAdd() == 1)
+            //    MessageBox.Show("Аккаунт был создан");
+            //else
+            //    MessageBox.Show("Возникли проблемы с созданием");
         }
+
     }
 }

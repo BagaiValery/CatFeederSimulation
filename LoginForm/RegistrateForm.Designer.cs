@@ -81,7 +81,7 @@ namespace LoginForm
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(271, 26);
             this.NameBox.TabIndex = 4;
-            this.NameBox.TextChanged += new System.EventHandler(this.NameBox_TextChanged);
+            //this.NameBox.TextChanged += new System.EventHandler(this.NameBox_TextChanged);
             // 
             // PassLabel
             // 
