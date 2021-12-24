@@ -1,0 +1,5 @@
+C:\Users\EL LI\Desktop\Cat\CatFeederSimulation\Presenters\obj\Debug\net5.0\Presenters.csproj.AssemblyReference.cache
+C:\Users\EL LI\Desktop\Cat\CatFeederSimulation\Presenters\obj\Debug\net5.0\Presenters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EL LI\Desktop\Cat\CatFeederSimulation\Presenters\obj\Debug\net5.0\Presenters.AssemblyInfoInputs.cache
+C:\Users\EL LI\Desktop\Cat\CatFeederSimulation\Presenters\obj\Debug\net5.0\Presenters.AssemblyInfo.cs
+C:\Users\EL LI\Desktop\Cat\CatFeederSimulation\Presenters\obj\Debug\net5.0\Presenters.csproj.CoreCompileInputs.cache
