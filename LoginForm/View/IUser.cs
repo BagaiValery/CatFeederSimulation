@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Presenters.View
+namespace LoginForm.View
 {
-    public interface ILoginView
+    public interface IUser
     {
         string LoginTxt { get; set; }
         string PassTxt { get; set; }
-
+        string Mess { get; set; }
     }
 }
