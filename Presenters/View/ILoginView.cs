@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Presenters.View
 {
-    interface ILoginView
+    public interface ILoginView
     {
         string NameTxt { get; set; }
         string PassTxt { get; set; }

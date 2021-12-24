@@ -1,25 +1,19 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v5.0": {}
+    "net5.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v5.0": []
+    "net5.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\EL LI\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\Artmas\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
->>>>>>> c2734142e0200a69946967240fc985ec632ae35b
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\Model\\Model.csproj",
       "projectName": "Model",
       "projectPath": "C:\\Users\\EL LI\\Desktop\\Cat\\CatFeederSimulation\\Model\\Model.csproj",
@@ -32,30 +26,18 @@
       "configFilePaths": [
         "C:\\Users\\EL LI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-      "projectUniqueName": "D:\\Documents\\Study\\Feeder\\CatFeederSimulation\\Model\\Model.csproj",
-      "projectName": "Model",
-      "projectPath": "D:\\Documents\\Study\\Feeder\\CatFeederSimulation\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\Artmas\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Study\\Feeder\\CatFeederSimulation\\Model\\obj\\",
-      "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
-      "configFilePaths": [
-        "C:\\Users\\Artmas\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> c2734142e0200a69946967240fc985ec632ae35b
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net50"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net50": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -66,7 +48,6 @@
       }
     },
     "frameworks": {
-<<<<<<< HEAD
       "net5.0": {
         "targetAlias": "net5.0",
         "imports": [
@@ -100,9 +81,6 @@
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
-=======
-      "net50": {}
->>>>>>> c2734142e0200a69946967240fc985ec632ae35b
     }
   }
 }
