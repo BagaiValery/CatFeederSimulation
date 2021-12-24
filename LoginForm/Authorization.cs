@@ -13,7 +13,6 @@ namespace LoginForm
     public partial class Authorization : Form
     {
         Simulation sim = new Simulation();
-        UserForm uf = new UserForm();
         AdminForm af = new AdminForm();
         AuthUserForm ua = new AuthUserForm();
         public Authorization()
@@ -40,7 +39,6 @@ namespace LoginForm
         {
             ua.Show();
 
-        //            uf.Show();
         }
 
         private void simulation_Click(object sender, EventArgs e)

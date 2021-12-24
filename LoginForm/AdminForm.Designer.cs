@@ -116,9 +116,15 @@ namespace LoginForm
             // 
             // back
             // 
+<<<<<<< HEAD
             this.back.Location = new System.Drawing.Point(703, 392);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(77, 28);
+=======
+            this.back.Location = new System.Drawing.Point(653, 377);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(85, 37);
+>>>>>>> 79253450de5fd378bdc96f95770a306cbfd86422
             this.back.TabIndex = 9;
             this.back.Text = "back";
             this.back.UseVisualStyleBackColor = true;
