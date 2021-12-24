@@ -1,4 +1,5 @@
-﻿using LoginForm.View;
+﻿
+using LoginForm.View;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace LoginForm
 {
@@ -36,7 +38,7 @@ namespace LoginForm
 
         private void EnterAuthbutton_Click(object sender, EventArgs e)
         {
-            LoginPresenter presenter = new LoginPresenter(this);
+            Presenters.Presenters.LoginPresenter presenter = new LoginPresenter(this);
             
             if(presenter.MessFind() > 0)
                 MessageBox.Show("Пользователь найден");

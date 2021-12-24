@@ -1,4 +1,5 @@
-﻿using Presenters.View;
+﻿using Model.Enity;
+using LoginForm.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Presenters.Presenters
 {
-    class LoginPresenter
+    public class LoginPresenter
     {
         IUser LoginView;
 
@@ -18,25 +19,20 @@ namespace Presenters.Presenters
 
         public void FindUser()
         {
-            UserDb user = new UserDb();
+            UserDB user = new UserDB();
         }
 
         public void MessFind()
         {
-            User user = new User();
-            user.Login = LoginView.LoginTxt;
-            user.Pass = LoginView.PassTxt;
+            User user = new User(LoginView.LoginTxt,LoginView.PassTxt);
 
-            LoginView.MessFind = user.MessFind().ToString();
+            LoginView.Mess = user.MessFind().ToString();
         }
 
         public void MessAdd()
         {
-            User user = new User();
-            user.Login = LoginView.LoginTxt;
-            user.Pass = LoginView.PassTxt;
-
-            LoginView.MessFind = user.MessAdd().ToString();
+            User user = new User(LoginView.LoginTxt,LoginView.PassTxt);
+            LoginView.Mess = user.MessAdd().ToString();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model.Enity
 {
-    class User
+    public class User
     {
         public string Login {get; set;}
         public string Pass { get; set; }

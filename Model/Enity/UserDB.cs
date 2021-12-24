@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Model.Enity
 {
-    internal class UserDB : DB
+    public class UserDB : DB
     {
         DB db = new DB();
         public int FindUser (string LoginUser, string PassUser)
