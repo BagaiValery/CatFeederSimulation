@@ -1,4 +1,5 @@
-﻿using LoginForm.View;
+﻿using Presenter.Presenters;
+using Presenter.View;
 using System;
 using System.Windows.Forms;
 
@@ -25,16 +26,17 @@ namespace LoginForm
             set 
             {PasswordBox.Text=value; } 
         }
-        public string Mess { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        
+        public int Mess { get; set ; }
+        //int IUser.Mess { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            //LoginPresenter presenter = new LoginPresenter(this);
+            LoginPresenter presenter = new LoginPresenter(this);
 
-            //if (presenter.MessAdd() == 1)
-            //    MessageBox.Show("Аккаунт был создан");
-            //else
-            //    MessageBox.Show("Возникли проблемы с созданием");
+            if (presenter.MessAdd() == 1)
+                MessageBox.Show("Аккаунт был создан");
+            else
+                MessageBox.Show("Возникли проблемы с созданием");
         }
 
     }

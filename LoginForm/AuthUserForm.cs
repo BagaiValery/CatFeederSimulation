@@ -1,5 +1,6 @@
 ﻿
-using LoginForm.View;
+using Presenter.View;
+using Presenter.Presenters;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -34,16 +35,24 @@ namespace LoginForm
             set
             { PasswordBox.Text = value; }
         }
-        public string Mess { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int Mess { get ; set ; }
+        //int IUser.Mess { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         private void EnterAuthbutton_Click(object sender, EventArgs e)
         {
-            //Presenters.Presenters.LoginPresenter presenter = new LoginPresenter(this);
-            
-            //if(presenter.MessFind() > 0)
-            //    MessageBox.Show("Пользователь найден");
-            //else
-            //    MessageBox.Show("Пользователя не существует");
+            LoginPresenter presenter = new LoginPresenter(this);
+
+            if (presenter.MessFind() > 0)
+                MessageBox.Show("Пользователь найден");
+            else
+                MessageBox.Show("Пользователя не существует");
+        }
+
+        private void back1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Authorization auth = new Authorization();
+            auth.Show();
         }
     }
 }

@@ -38,6 +38,7 @@ namespace LoginForm
             this.Enter = new System.Windows.Forms.Button();
             this.food1 = new System.Windows.Forms.TextBox();
             this.answer = new System.Windows.Forms.Label();
+            this.back1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,9 +48,8 @@ namespace LoginForm
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(550, 65);
+            this.panel1.Size = new System.Drawing.Size(825, 100);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -58,9 +58,8 @@ namespace LoginForm
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(550, 65);
+            this.label1.Size = new System.Drawing.Size(825, 100);
             this.label1.TabIndex = 0;
             this.label1.Text = "Hand fedding";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,38 +67,36 @@ namespace LoginForm
             // feeders
             // 
             this.feeders.FormattingEnabled = true;
-            this.feeders.Location = new System.Drawing.Point(105, 221);
-            this.feeders.Margin = new System.Windows.Forms.Padding(2);
+            this.feeders.Location = new System.Drawing.Point(158, 340);
             this.feeders.Name = "feeders";
-            this.feeders.Size = new System.Drawing.Size(313, 21);
+            this.feeders.Size = new System.Drawing.Size(468, 28);
             this.feeders.TabIndex = 2;
             this.feeders.SelectedIndexChanged += new System.EventHandler(this.feeders_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 131);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(350, 202);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 13);
+            this.label2.Size = new System.Drawing.Size(93, 20);
             this.label2.TabIndex = 3;
             this.label2.Text = "How mush?";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(227, 206);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(340, 317);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(76, 13);
+            this.label3.Size = new System.Drawing.Size(114, 20);
             this.label3.TabIndex = 4;
             this.label3.Text = "Choose feeder";
             // 
             // Enter
             // 
-            this.Enter.Location = new System.Drawing.Point(228, 332);
+            this.Enter.Location = new System.Drawing.Point(342, 511);
+            this.Enter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Enter.Name = "Enter";
-            this.Enter.Size = new System.Drawing.Size(75, 23);
+            this.Enter.Size = new System.Drawing.Size(112, 35);
             this.Enter.TabIndex = 5;
             this.Enter.Text = "Enter";
             this.Enter.UseVisualStyleBackColor = true;
@@ -107,9 +104,10 @@ namespace LoginForm
             // 
             // food1
             // 
-            this.food1.Location = new System.Drawing.Point(105, 167);
+            this.food1.Location = new System.Drawing.Point(158, 257);
+            this.food1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.food1.Name = "food1";
-            this.food1.Size = new System.Drawing.Size(313, 20);
+            this.food1.Size = new System.Drawing.Size(468, 26);
             this.food1.TabIndex = 6;
             this.food1.Text = "g";
             this.food1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -118,16 +116,28 @@ namespace LoginForm
             // answer
             // 
             this.answer.AutoSize = true;
-            this.answer.Location = new System.Drawing.Point(248, 278);
+            this.answer.Location = new System.Drawing.Point(372, 428);
+            this.answer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.answer.Name = "answer";
-            this.answer.Size = new System.Drawing.Size(0, 13);
+            this.answer.Size = new System.Drawing.Size(0, 20);
             this.answer.TabIndex = 7;
+            // 
+            // back1
+            // 
+            this.back1.Location = new System.Drawing.Point(679, 414);
+            this.back1.Name = "back1";
+            this.back1.Size = new System.Drawing.Size(87, 34);
+            this.back1.TabIndex = 10;
+            this.back1.Text = "back";
+            this.back1.UseVisualStyleBackColor = true;
+            this.back1.Click += new System.EventHandler(this.back1_Click);
             // 
             // ManualHandlingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 401);
+            this.ClientSize = new System.Drawing.Size(825, 617);
+            this.Controls.Add(this.back1);
             this.Controls.Add(this.answer);
             this.Controls.Add(this.food1);
             this.Controls.Add(this.Enter);
@@ -137,7 +147,6 @@ namespace LoginForm
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ManualHandlingForm";
             this.Text = "ManualHandlingForm";
             this.Load += new System.EventHandler(this.ManualHandlingForm_Load);
@@ -157,5 +166,6 @@ namespace LoginForm
         private System.Windows.Forms.Button Enter;
         private System.Windows.Forms.TextBox food1;
         private System.Windows.Forms.Label answer;
+        private System.Windows.Forms.Button back1;
     }
 }

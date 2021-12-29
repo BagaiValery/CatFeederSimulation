@@ -15,17 +15,19 @@ namespace LoginForm
         Simulation sim = new Simulation();
         AdminForm af = new AdminForm();
         AuthUserForm ua = new AuthUserForm();
+        RegistrateForm reg = new RegistrateForm();
+
         public Authorization()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Authorization_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void LoginAdmin_Click(object sender, EventArgs e)
         {
             af.Show();
         }
@@ -35,7 +37,7 @@ namespace LoginForm
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LoginUser_Click(object sender, EventArgs e)
         {
             ua.Show();
 
@@ -44,6 +46,11 @@ namespace LoginForm
         private void simulation_Click(object sender, EventArgs e)
         {
             sim.Show();
+        }
+
+        private void RegButton_Click(object sender, EventArgs e)
+        {
+            reg.Show();
         }
     }
 }

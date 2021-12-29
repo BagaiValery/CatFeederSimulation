@@ -35,6 +35,7 @@ namespace LoginForm
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.simulation = new System.Windows.Forms.Button();
+            this.RegButton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@ namespace LoginForm
             this.LoginUser.Text = "Login as user";
             this.LoginUser.UseMnemonic = false;
             this.LoginUser.UseVisualStyleBackColor = false;
-            this.LoginUser.Click += new System.EventHandler(this.button1_Click);
+            this.LoginUser.Click += new System.EventHandler(this.LoginUser_Click);
             // 
             // LoginAdmin
             // 
@@ -67,14 +68,14 @@ namespace LoginForm
             this.LoginAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LoginAdmin.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoginAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.LoginAdmin.Location = new System.Drawing.Point(81, 289);
+            this.LoginAdmin.Location = new System.Drawing.Point(81, 330);
             this.LoginAdmin.Name = "LoginAdmin";
             this.LoginAdmin.Size = new System.Drawing.Size(295, 70);
             this.LoginAdmin.TabIndex = 1;
             this.LoginAdmin.Text = "Login as admin";
             this.LoginAdmin.UseMnemonic = false;
             this.LoginAdmin.UseVisualStyleBackColor = false;
-            this.LoginAdmin.Click += new System.EventHandler(this.button2_Click);
+            this.LoginAdmin.Click += new System.EventHandler(this.LoginAdmin_Click);
             // 
             // panel1
             // 
@@ -118,21 +119,41 @@ namespace LoginForm
             this.simulation.UseVisualStyleBackColor = false;
             this.simulation.Click += new System.EventHandler(this.simulation_Click);
             // 
-            // Form1
+            // RegButton
+            // 
+            this.RegButton.BackColor = System.Drawing.Color.DimGray;
+            this.RegButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegButton.FlatAppearance.BorderSize = 4;
+            this.RegButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.RegButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.RegButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegButton.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.RegButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.RegButton.Location = new System.Drawing.Point(81, 238);
+            this.RegButton.Name = "RegButton";
+            this.RegButton.Size = new System.Drawing.Size(295, 70);
+            this.RegButton.TabIndex = 4;
+            this.RegButton.Text = "Registration";
+            this.RegButton.UseMnemonic = false;
+            this.RegButton.UseVisualStyleBackColor = false;
+            this.RegButton.Click += new System.EventHandler(this.RegButton_Click);
+            // 
+            // Authorization
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(473, 535);
+            this.Controls.Add(this.RegButton);
             this.Controls.Add(this.simulation);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LoginAdmin);
             this.Controls.Add(this.LoginUser);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Authorization";
             this.Text = "CatFedder";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Authorization_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -145,6 +166,7 @@ namespace LoginForm
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button simulation;
+        private System.Windows.Forms.Button RegButton;
     }
 }
 

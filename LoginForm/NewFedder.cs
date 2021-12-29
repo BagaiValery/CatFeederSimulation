@@ -32,5 +32,12 @@ namespace LoginForm
             string name = NewFedderName.Text;
             label.Text = NewFedderName.Text;
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Authorization auth = new Authorization();
+            auth.Show();
+        }
     }
 }

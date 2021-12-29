@@ -36,6 +36,7 @@ namespace LoginForm
             this.NameLabel = new System.Windows.Forms.Label();
             this.PassLabel = new System.Windows.Forms.Label();
             this.EnterAuthbutton = new System.Windows.Forms.Button();
+            this.back1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,11 +107,22 @@ namespace LoginForm
             this.EnterAuthbutton.UseVisualStyleBackColor = true;
             this.EnterAuthbutton.Click += new System.EventHandler(this.EnterAuthbutton_Click);
             // 
+            // back1
+            // 
+            this.back1.Location = new System.Drawing.Point(674, 389);
+            this.back1.Name = "back1";
+            this.back1.Size = new System.Drawing.Size(87, 34);
+            this.back1.TabIndex = 11;
+            this.back1.Text = "back";
+            this.back1.UseVisualStyleBackColor = true;
+            this.back1.Click += new System.EventHandler(this.back1_Click);
+            // 
             // AuthUserForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back1);
             this.Controls.Add(this.EnterAuthbutton);
             this.Controls.Add(this.PassLabel);
             this.Controls.Add(this.NameLabel);
@@ -133,5 +145,6 @@ namespace LoginForm
         private System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label PassLabel;
         private System.Windows.Forms.Button EnterAuthbutton;
+        private System.Windows.Forms.Button back1;
     }
 }

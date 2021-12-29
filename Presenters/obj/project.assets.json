@@ -130,25 +130,6 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
-      },
-      "LoginForm/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/LoginForm.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/LoginForm.dll": {}
-        }
-      },
-      "Model/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Model.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Model.dll": {}
-        }
       }
     }
   },
@@ -734,22 +715,10 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
-    },
-    "LoginForm/1.0.0": {
-      "type": "project",
-      "path": "../LoginForm/LoginForm.csproj",
-      "msbuildProject": "../LoginForm/LoginForm.csproj"
-    },
-    "Model/1.0.0": {
-      "type": "project",
-      "path": "../Model/Model.csproj",
-      "msbuildProject": "../Model/Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "LoginForm >= 1.0.0",
-      "Model >= 1.0.0",
       "Ninject >= 3.3.4"
     ]
   },
@@ -779,14 +748,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\LoginForm\\LoginForm.csproj": {
-              "projectPath": "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\LoginForm\\LoginForm.csproj"
-            },
-            "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\Lerika\\Documents\\ТП\\LoginForm\\Model\\Model.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

@@ -9,9 +9,4 @@
     <PackageReference Include="Ninject" Version="3.3.4" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\LoginForm\LoginForm.csproj" />
-    <ProjectReference Include="..\Model\Model.csproj" />
-  </ItemGroup>
-
 </Project>
