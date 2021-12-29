@@ -1,5 +1,0 @@
-C:\Users\Lerika\Documents\ТП\LoginForm\ClassLibrary1\bin\Debug\ClassLibrary1.dll
-C:\Users\Lerika\Documents\ТП\LoginForm\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
-C:\Users\Lerika\Documents\ТП\LoginForm\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
-C:\Users\Lerika\Documents\ТП\LoginForm\ClassLibrary1\obj\Debug\ClassLibrary1.dll
-C:\Users\Lerika\Documents\ТП\LoginForm\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
