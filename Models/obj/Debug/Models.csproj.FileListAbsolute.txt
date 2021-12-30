@@ -17,3 +17,7 @@ C:\Users\Lerika\Documents\ТП\LoginForm\Models\obj\Debug\Models.csproj.CoreComp
 C:\Users\Lerika\Documents\ТП\LoginForm\Models\obj\Debug\Models.csproj.CopyComplete
 C:\Users\Lerika\Documents\ТП\LoginForm\Models\obj\Debug\Models.dll
 C:\Users\Lerika\Documents\ТП\LoginForm\Models\obj\Debug\Models.pdb
+C:\Users\EL LI\Desktop\Cat\Models\obj\Debug\Models.csproj.AssemblyReference.cache
+C:\Users\EL LI\Desktop\Cat\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\EL LI\Desktop\Cat\Models\obj\Debug\Models.dll
+C:\Users\EL LI\Desktop\Cat\Models\obj\Debug\Models.pdb

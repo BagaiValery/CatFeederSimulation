@@ -19,3 +19,7 @@ C:\Users\Lerika\Documents\ТП\LoginForm\Presenter\obj\Debug\Presenter.csproj.Co
 C:\Users\Lerika\Documents\ТП\LoginForm\Presenter\obj\Debug\Presenter.csproj.CopyComplete
 C:\Users\Lerika\Documents\ТП\LoginForm\Presenter\obj\Debug\Presenter.dll
 C:\Users\Lerika\Documents\ТП\LoginForm\Presenter\obj\Debug\Presenter.pdb
+C:\Users\EL LI\Desktop\Cat\Presenter\obj\Debug\Presenter.csproj.AssemblyReference.cache
+C:\Users\EL LI\Desktop\Cat\Presenter\obj\Debug\Presenter.csproj.CoreCompileInputs.cache
+C:\Users\EL LI\Desktop\Cat\Presenter\obj\Debug\Presenter.dll
+C:\Users\EL LI\Desktop\Cat\Presenter\obj\Debug\Presenter.pdb
