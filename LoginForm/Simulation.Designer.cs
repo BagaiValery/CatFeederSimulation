@@ -31,8 +31,10 @@ namespace LoginForm
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Simulation));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.food = new System.Windows.Forms.Label();
+            this.days = new System.Windows.Forms.Label();
+            this.start = new System.Windows.Forms.Button();
+            this.stop = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.FullFeeder = new System.Windows.Forms.Button();
             this.FeddersList = new System.Windows.Forms.Button();
@@ -40,8 +42,6 @@ namespace LoginForm
             this.manual = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.back1 = new System.Windows.Forms.Button();
-            this.days = new System.Windows.Forms.Label();
-            this.food = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,40 +50,61 @@ namespace LoginForm
             this.panel1.BackColor = System.Drawing.Color.DarkSalmon;
             this.panel1.Controls.Add(this.food);
             this.panel1.Controls.Add(this.days);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.start);
+            this.panel1.Controls.Add(this.stop);
             this.panel1.Location = new System.Drawing.Point(191, -2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(133, 294);
             this.panel1.TabIndex = 0;
             // 
-            // button2
+            // food
             // 
-            this.button2.Location = new System.Drawing.Point(2, 177);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 22);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "start";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.food.AutoSize = true;
+            this.food.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.food.Location = new System.Drawing.Point(26, 134);
+            this.food.Name = "food";
+            this.food.Size = new System.Drawing.Size(63, 20);
+            this.food.TabIndex = 12;
+            this.food.Text = "Food: 0";
             // 
-            // button3
+            // days
             // 
-            this.button3.Location = new System.Drawing.Point(73, 177);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(58, 22);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "stop";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.days.AutoSize = true;
+            this.days.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.days.Location = new System.Drawing.Point(26, 92);
+            this.days.Name = "days";
+            this.days.Size = new System.Drawing.Size(54, 20);
+            this.days.TabIndex = 11;
+            this.days.Text = "Day: 0";
+            this.days.Click += new System.EventHandler(this.days_Click);
+            // 
+            // start
+            // 
+            this.start.Location = new System.Drawing.Point(2, 177);
+            this.start.Margin = new System.Windows.Forms.Padding(2);
+            this.start.Name = "start";
+            this.start.Size = new System.Drawing.Size(58, 22);
+            this.start.TabIndex = 5;
+            this.start.Text = "start";
+            this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.start_Click);
+            // 
+            // stop
+            // 
+            this.stop.Location = new System.Drawing.Point(73, 177);
+            this.stop.Margin = new System.Windows.Forms.Padding(2);
+            this.stop.Name = "stop";
+            this.stop.Size = new System.Drawing.Size(58, 22);
+            this.stop.TabIndex = 6;
+            this.stop.Text = "stop";
+            this.stop.UseVisualStyleBackColor = true;
+            this.stop.Click += new System.EventHandler(this.stop_Click);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(412, 191);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(68, 20);
             this.textBox2.TabIndex = 1;
@@ -98,7 +119,7 @@ namespace LoginForm
             this.FullFeeder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FullFeeder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FullFeeder.Location = new System.Drawing.Point(-1, -2);
-            this.FullFeeder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FullFeeder.Margin = new System.Windows.Forms.Padding(2);
             this.FullFeeder.Name = "FullFeeder";
             this.FullFeeder.Size = new System.Drawing.Size(97, 41);
             this.FullFeeder.TabIndex = 1;
@@ -111,7 +132,7 @@ namespace LoginForm
             this.FeddersList.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.FeddersList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FeddersList.Location = new System.Drawing.Point(412, 26);
-            this.FeddersList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FeddersList.Margin = new System.Windows.Forms.Padding(2);
             this.FeddersList.Name = "FeddersList";
             this.FeddersList.Size = new System.Drawing.Size(87, 41);
             this.FeddersList.TabIndex = 3;
@@ -124,7 +145,7 @@ namespace LoginForm
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(-1, 44);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 36);
             this.button1.TabIndex = 4;
@@ -137,7 +158,7 @@ namespace LoginForm
             this.manual.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.manual.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.manual.Location = new System.Drawing.Point(388, 132);
-            this.manual.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.manual.Margin = new System.Windows.Forms.Padding(2);
             this.manual.Name = "manual";
             this.manual.Size = new System.Drawing.Size(125, 41);
             this.manual.TabIndex = 7;
@@ -156,34 +177,13 @@ namespace LoginForm
             // back1
             // 
             this.back1.Location = new System.Drawing.Point(441, 248);
-            this.back1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.back1.Margin = new System.Windows.Forms.Padding(2);
             this.back1.Name = "back1";
             this.back1.Size = new System.Drawing.Size(58, 22);
             this.back1.TabIndex = 9;
             this.back1.Text = "back";
             this.back1.UseVisualStyleBackColor = true;
             this.back1.Click += new System.EventHandler(this.back_Click);
-            // 
-            // days
-            // 
-            this.days.AutoSize = true;
-            this.days.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.days.Location = new System.Drawing.Point(26, 92);
-            this.days.Name = "days";
-            this.days.Size = new System.Drawing.Size(54, 20);
-            this.days.TabIndex = 11;
-            this.days.Text = "Day: 0";
-            this.days.Click += new System.EventHandler(this.days_Click);
-            // 
-            // food
-            // 
-            this.food.AutoSize = true;
-            this.food.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.food.Location = new System.Drawing.Point(26, 134);
-            this.food.Name = "food";
-            this.food.Size = new System.Drawing.Size(63, 20);
-            this.food.TabIndex = 12;
-            this.food.Text = "Food: 0";
             // 
             // Simulation
             // 
@@ -199,7 +199,7 @@ namespace LoginForm
             this.Controls.Add(this.FullFeeder);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Simulation";
             this.Text = "Simulation";
             this.panel1.ResumeLayout(false);
@@ -216,8 +216,8 @@ namespace LoginForm
         private System.Windows.Forms.Button FeddersList;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button start;
+        private System.Windows.Forms.Button stop;
         private System.Windows.Forms.Button manual;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button back1;

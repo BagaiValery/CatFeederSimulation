@@ -18,7 +18,7 @@ namespace LoginForm
             InitializeComponent();
         }
 
-        private async void button2_Click(object sender, EventArgs e)
+        private async void start_Click(object sender, EventArgs e)
         {
             simulationOn = true;
             int simulationDays = 0;
@@ -54,7 +54,7 @@ namespace LoginForm
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void stop_Click(object sender, EventArgs e)
         {
             simulationOn = false;
         }

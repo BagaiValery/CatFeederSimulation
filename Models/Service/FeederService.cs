@@ -33,8 +33,8 @@ namespace Models.Service
 
         public int MakeFull()
         {
-            maxFood = 500;
-            return maxFood;
+            feeder.maxFood = 500;
+            return feeder.maxFood;
         }
     }
 }
