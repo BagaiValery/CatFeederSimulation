@@ -12,7 +12,6 @@ namespace Models.Service
         private static int SimStop;
 
          /*       public void StartSim()
-        >>>>>>> c2734142e0200a69946967240fc985ec632ae35b
                 {
                     SimStop = 0;
                     CatService cat = new CatService("Barsik");

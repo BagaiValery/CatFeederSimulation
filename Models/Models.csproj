@@ -49,11 +49,13 @@
     <Compile Include="Entity\User.cs" />
     <Compile Include="Entity\UserDB.cs" />
     <Compile Include="ICatService.cs" />
+    <Compile Include="IFeederService.cs" />
     <Compile Include="IRepository.cs" />
     <Compile Include="IScheduleService.cs" />
     <Compile Include="ISimulationService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\CatService.cs" />
+    <Compile Include="Service\FeederService.cs" />
     <Compile Include="Service\ScheduleService.cs" />
     <Compile Include="Service\SimulationService.cs" />
   </ItemGroup>

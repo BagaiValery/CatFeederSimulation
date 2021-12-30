@@ -17,16 +17,16 @@ namespace Models.Entity
             Pass = password;
         }
 
-        public int MessFind()
-        {
-            UserDB userdb = new UserDB();
-            return userdb.FindUser(Login, Pass);
-        }
+        //public int MessFind()
+        //{
+        //    DB userdb = new DB();
+        //    return userdb.Find("users", "login", "password", Login, Pass);
+        //}
 
-        public int MessAdd()
-        {
-            UserDB userdb = new UserDB();
-            return userdb.AddUser(Login, Pass);
-        }
+        //public int MessAdd()
+        //{
+        //    DB userdb = new DB();
+        //    return userdb.Add("users", "login", "password", Login, Pass);
+        //}
     }
 }

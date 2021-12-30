@@ -17,22 +17,18 @@ namespace Presenter.Presenters
         LoginView = view;
     }
 
-    public void FindUser()
-    {
-        UserDB user = new UserDB();
-    }
-
     public int MessFind()
     {
-        User user = new User(LoginView.LoginTxt, LoginView.PassTxt);
+        DB user = new DB();
+            //LoginView.LoginTxt, LoginView.PassTxt
 
-           return LoginView.Mess = user.MessFind();
+           return LoginView.Mess = user.Find("users", "login", "password", LoginView.LoginTxt, LoginView.PassTxt);
     }
 
     public int MessAdd()
     {
-        User user = new User(LoginView.LoginTxt, LoginView.PassTxt);
-        return LoginView.Mess = user.MessAdd();
+            DB user = new DB();
+            return LoginView.Mess = user.Add("users", "login", "password", LoginView.LoginTxt, LoginView.PassTxt);
     }
     }
 }

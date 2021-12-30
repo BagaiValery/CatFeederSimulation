@@ -20,9 +20,9 @@ namespace Models.Service
         }
         public void Eat(Feeder feeder)
         {
-            if (feeder.IsThisFeederEmpty())
-                Meow(/*Feeder*/);
-            else feeder.EmptyBowl();
+            //if (feeder.IsThisFeederEmpty())
+            //    Meow(/*Feeder*/);
+            //else feeder.EmptyBowl();
         }
         public void Meow(/*Feeder*/)
         {

@@ -44,7 +44,7 @@ namespace Models.Service
 
         public void SetSchedule(Feeder feeder, Schedule schedule)
         {
-            feeder.FeedingSchedule = schedule;
+            //feeder.FeedingSchedule = schedule;
         }
     }
 }

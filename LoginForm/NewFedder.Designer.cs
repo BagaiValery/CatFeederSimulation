@@ -37,12 +37,15 @@ namespace LoginForm
             this.answer = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.back = new System.Windows.Forms.Button();
+            this.nameFeeder = new System.Windows.Forms.Label();
+            this.userList = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // NewFedderName
             // 
-            this.NewFedderName.Location = new System.Drawing.Point(184, 225);
+            this.NewFedderName.Location = new System.Drawing.Point(188, 273);
             this.NewFedderName.Name = "NewFedderName";
             this.NewFedderName.Size = new System.Drawing.Size(406, 26);
             this.NewFedderName.TabIndex = 0;
@@ -76,7 +79,7 @@ namespace LoginForm
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(318, 302);
+            this.button1.Location = new System.Drawing.Point(308, 338);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(164, 71);
             this.button1.TabIndex = 2;
@@ -113,11 +116,42 @@ namespace LoginForm
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
             // 
+            // nameFeeder
+            // 
+            this.nameFeeder.AutoSize = true;
+            this.nameFeeder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.nameFeeder.Location = new System.Drawing.Point(22, 273);
+            this.nameFeeder.Name = "nameFeeder";
+            this.nameFeeder.Size = new System.Drawing.Size(149, 29);
+            this.nameFeeder.TabIndex = 6;
+            this.nameFeeder.Text = "name feeder";
+            // 
+            // userList
+            // 
+            this.userList.FormattingEnabled = true;
+            this.userList.Location = new System.Drawing.Point(327, 171);
+            this.userList.Name = "userList";
+            this.userList.Size = new System.Drawing.Size(121, 28);
+            this.userList.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(228, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(70, 32);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "user";
+            // 
             // NewFedder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 449);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.userList);
+            this.Controls.Add(this.nameFeeder);
             this.Controls.Add(this.back);
             this.Controls.Add(this.label);
             this.Controls.Add(this.answer);
@@ -143,5 +177,8 @@ namespace LoginForm
         private System.Windows.Forms.Label answer;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button back;
+        private System.Windows.Forms.Label nameFeeder;
+        private System.Windows.Forms.ComboBox userList;
+        private System.Windows.Forms.Label label2;
     }
 }
