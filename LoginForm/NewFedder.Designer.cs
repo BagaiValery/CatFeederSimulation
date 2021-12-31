@@ -30,7 +30,7 @@ namespace LoginForm
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewFedder));
-            this.NewFedderName = new System.Windows.Forms.TextBox();
+            this.NewFeederName = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -43,12 +43,12 @@ namespace LoginForm
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // NewFedderName
+            // NewFeederName
             // 
-            this.NewFedderName.Location = new System.Drawing.Point(188, 273);
-            this.NewFedderName.Name = "NewFedderName";
-            this.NewFedderName.Size = new System.Drawing.Size(406, 26);
-            this.NewFedderName.TabIndex = 0;
+            this.NewFeederName.Location = new System.Drawing.Point(188, 273);
+            this.NewFeederName.Name = "NewFeederName";
+            this.NewFeederName.Size = new System.Drawing.Size(406, 26);
+            this.NewFeederName.TabIndex = 0;
             // 
             // panel1
             // 
@@ -85,7 +85,7 @@ namespace LoginForm
             this.button1.TabIndex = 2;
             this.button1.Text = "Create";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.creat_Click);
             // 
             // answer
             // 
@@ -133,6 +133,7 @@ namespace LoginForm
             this.userList.Name = "userList";
             this.userList.Size = new System.Drawing.Size(121, 28);
             this.userList.TabIndex = 7;
+            this.userList.DropDown += new System.EventHandler(this.userList_DropDown);
             // 
             // label2
             // 
@@ -157,7 +158,7 @@ namespace LoginForm
             this.Controls.Add(this.answer);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.NewFedderName);
+            this.Controls.Add(this.NewFeederName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NewFedder";
             this.Text = "NewFedder";
@@ -170,7 +171,7 @@ namespace LoginForm
 
         #endregion
 
-        private System.Windows.Forms.TextBox NewFedderName;
+        private System.Windows.Forms.TextBox NewFeederName;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;

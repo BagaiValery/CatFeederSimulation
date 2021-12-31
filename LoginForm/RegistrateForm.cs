@@ -33,7 +33,7 @@ namespace LoginForm
         {
             LoginPresenter presenter = new LoginPresenter(this);
 
-            if (presenter.MessAdd() == 1)
+            if (presenter.MessAddUser() == 1)
                 MessageBox.Show("Аккаунт был создан");
             else
                 MessageBox.Show("Возникли проблемы с созданием");

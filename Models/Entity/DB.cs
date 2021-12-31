@@ -34,11 +34,11 @@ namespace Models.Entity
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand commandChooseUser = new MySqlCommand("SELECT * FROM `" + TableName +"` WHERE `" + first + "` = @f AND `"+ second + "` = @s", connection);
-            commandChooseUser.Parameters.Add("@f", MySqlDbType.VarChar).Value = valueFirst;
-            commandChooseUser.Parameters.Add("@s", MySqlDbType.VarChar).Value = valueSecond;
+            MySqlCommand commandChoose = new MySqlCommand("SELECT * FROM `" + TableName +"` WHERE `" + first + "` = @f AND `"+ second + "` = @s", connection);
+            commandChoose.Parameters.Add("@f", MySqlDbType.VarChar).Value = valueFirst;
+            commandChoose.Parameters.Add("@s", MySqlDbType.VarChar).Value = valueSecond;
 
-            adapter.SelectCommand = commandChooseUser;
+            adapter.SelectCommand = commandChoose;
             adapter.Fill(table);
 
             return table.Rows.Count;
@@ -50,24 +50,53 @@ namespace Models.Entity
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand commandChooseUser = new MySqlCommand("SELECT * FROM `" + TableName + "` WHERE `" + first + "` = @f", connection);
-            commandChooseUser.Parameters.Add("@f", MySqlDbType.VarChar).Value = valueFirst;
+            MySqlCommand commandChoose = new MySqlCommand("SELECT * FROM `" + TableName + "` WHERE `" + first + "` = @f", connection);
+            commandChoose.Parameters.Add("@f", MySqlDbType.VarChar).Value = valueFirst;
 
-            adapter.SelectCommand = commandChooseUser;
+            adapter.SelectCommand = commandChoose;
             adapter.Fill(table);
 
             return table.Rows.Count;
         }
 
+        public int Find(string TableName, string column)
+        {
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand commandChoose = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
+
+            adapter.SelectCommand = commandChoose;
+            adapter.Fill(table);
+
+            return table.Rows.Count;
+        }
+
+        public string[] GetAll(string TableName, string column)
+        {
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand commandChoose = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
+
+            adapter.SelectCommand = commandChoose;
+            adapter.Fill(table);
+
+            string[] values = new string[table.Rows.Count];
+
+            table.Rows.CopyTo(values, 0);
+            return values;
+        }
+
         public int Add(string TableName, string first, string second, string valueFirst, string valueSecond)
         {
-            MySqlCommand commandChooseUser = new MySqlCommand("INSERT INTO `"+ TableName + "`(`" + first + "`, `" + second + "`) VALUES (@f, @s)", connection);
-            commandChooseUser.Parameters.Add("@f", MySqlDbType.VarChar).Value = valueFirst;
-            commandChooseUser.Parameters.Add("@s", MySqlDbType.VarChar).Value = valueSecond;
+            MySqlCommand commandADD = new MySqlCommand("INSERT INTO `"+ TableName + "`(`" + first + "`, `" + second + "`) VALUES (@f, @s)", connection);
+            commandADD.Parameters.Add("@f", MySqlDbType.VarChar).Value = valueFirst;
+            commandADD.Parameters.Add("@s", MySqlDbType.VarChar).Value = valueSecond;
 
             OpenConnection();
 
-            int IsItExist = commandChooseUser.ExecuteNonQuery();
+            int IsItExist = commandADD.ExecuteNonQuery();
 
             CloseConnection();
 

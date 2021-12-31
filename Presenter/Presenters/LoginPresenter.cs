@@ -17,7 +17,7 @@ namespace Presenter.Presenters
         LoginView = view;
     }
 
-    public int MessFind()
+    public int MessFindUser()
     {
         DB user = new DB();
             //LoginView.LoginTxt, LoginView.PassTxt
@@ -25,10 +25,11 @@ namespace Presenter.Presenters
            return LoginView.Mess = user.Find("users", "login", "password", LoginView.LoginTxt, LoginView.PassTxt);
     }
 
-    public int MessAdd()
+    public int MessAddUser()
     {
             DB user = new DB();
             return LoginView.Mess = user.Add("users", "login", "password", LoginView.LoginTxt, LoginView.PassTxt);
     }
+
     }
 }

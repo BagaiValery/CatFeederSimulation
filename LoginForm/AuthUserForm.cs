@@ -36,13 +36,12 @@ namespace LoginForm
             { PasswordBox.Text = value; }
         }
         public int Mess { get ; set ; }
-        //int IUser.Mess { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         private void EnterAuthbutton_Click(object sender, EventArgs e)
         {
             LoginPresenter presenter = new LoginPresenter(this);
 
-            if (presenter.MessFind() > 0)
+            if (presenter.MessFindUser() > 0)
                 MessageBox.Show("Пользователь найден");
             else
                 MessageBox.Show("Пользователя не существует");

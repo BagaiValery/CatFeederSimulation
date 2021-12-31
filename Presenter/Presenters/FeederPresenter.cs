@@ -17,30 +17,45 @@ namespace Presenter.Presenters
             FeederView = view;
         }
 
-        public int MessFind()
+        public int MessFindFeeder()
         {
             DB user = new DB();
             //LoginView.LoginTxt, LoginView.PassTxt
             return FeederView.Mess = user.Find("feeders", "feederName", "user", FeederView.feederNameTxt, FeederView.feederUserTxt);
         }
 
-        public int MessAddForUser()
+        public int MessAddFeederForUser()
         {
-            DB user = new DB();
-            return FeederView.Mess = user.Add("feeders", "feederName", "user", FeederView.feederNameTxt, FeederView.feederUserTxt);
+            DB feeder = new DB();
+            return FeederView.Mess = feeder.Add("feeders", "feederName", "user", FeederView.feederNameTxt, FeederView.feederUserTxt);
         }
 
-        public int MessAddInfo()
+        public int MessAddInfoFeeder()
         {
-            DB user = new DB();
-            return FeederView.Mess = user.Add("feeders", "maxFood", "portion", FeederView.maxFoodTxt, FeederView.portionTxt);
+            DB feeder = new DB();
+            return FeederView.Mess = feeder.Add("feeders", "maxFood", "portion", FeederView.maxFoodTxt, FeederView.portionTxt);
         }
 
-        public int MessFindForUser()
+        public int MessFindFeederForUser()
         {
-            DB user = new DB();
+            DB feeder = new DB();
             //LoginView.LoginTxt, LoginView.PassTxt
-            return FeederView.Mess = user.Find("feeders", "user", FeederView.feederUserTxt);
+            return FeederView.Mess = feeder.Find("feeders", "user", FeederView.feederUserTxt);
+        }
+
+        public int MessCount()
+        {
+            DB feeder = new DB();
+            int count = feeder.Find("users", "login");
+            return count;
+        }
+
+        public string[] Users()
+        {
+            DB feeder = new DB();
+            string[] users = new string[MessCount()];
+            users = feeder.GetAll("users", "login");
+            return users;
         }
     }
 }

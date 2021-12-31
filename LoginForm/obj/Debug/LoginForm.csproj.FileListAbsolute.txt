@@ -139,3 +139,41 @@ C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInput
 C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.csproj.CopyComplete
 C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.exe
 C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.exe.config
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.AdminForm.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.AuthUserForm.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.Feeders.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.Authorization.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.LogsForm.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.ManualHandlingForm.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.NewFedder.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.RegistrateForm.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.Simulation.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.TimetableForm.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.UserForm.resources
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.exe
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.pdb
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\LoginForm.exe.config
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\LoginForm.exe
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\LoginForm.pdb
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\MySql.Data.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\Presenter.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\Models.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\Google.Protobuf.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\ZstdNet.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\System.Memory.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\System.Buffers.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\Presenter.pdb
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\MySql.Data.xml
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\Models.pdb
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.CopyComplete
