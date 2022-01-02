@@ -54,3 +54,4 @@ C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Models\obj\Debug\Mo
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Models\obj\Debug\Models.csproj.CopyComplete
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Models\obj\Debug\Models.dll
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Models\obj\Debug\Models.pdb
+C:\Users\EL LI\Desktop\Cat\Models\bin\Debug\System.Numerics.Vectors.dll

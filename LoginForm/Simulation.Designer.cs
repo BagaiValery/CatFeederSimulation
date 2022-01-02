@@ -35,13 +35,16 @@ namespace LoginForm
             this.days = new System.Windows.Forms.Label();
             this.start = new System.Windows.Forms.Button();
             this.stop = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dp = new System.Windows.Forms.TextBox();
             this.FullFeeder = new System.Windows.Forms.Button();
-            this.FeddersList = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.manual = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.back1 = new System.Windows.Forms.Button();
+            this.Feeders = new System.Windows.Forms.Label();
+            this.mf = new System.Windows.Forms.Label();
+            this.DayPortion = new System.Windows.Forms.Label();
+            this.FeederSize = new System.Windows.Forms.Label();
+            this.fs = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,13 +104,13 @@ namespace LoginForm
             this.stop.UseVisualStyleBackColor = true;
             this.stop.Click += new System.EventHandler(this.stop_Click);
             // 
-            // textBox2
+            // dp
             // 
-            this.textBox2.Location = new System.Drawing.Point(412, 191);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(68, 20);
-            this.textBox2.TabIndex = 1;
+            this.dp.Location = new System.Drawing.Point(431, 143);
+            this.dp.Margin = new System.Windows.Forms.Padding(2);
+            this.dp.Name = "dp";
+            this.dp.Size = new System.Drawing.Size(68, 20);
+            this.dp.TabIndex = 1;
             // 
             // FullFeeder
             // 
@@ -126,19 +129,6 @@ namespace LoginForm
             this.FullFeeder.Text = "Пополнить кормушку";
             this.FullFeeder.UseVisualStyleBackColor = false;
             // 
-            // FeddersList
-            // 
-            this.FeddersList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.FeddersList.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.FeddersList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FeddersList.Location = new System.Drawing.Point(412, 26);
-            this.FeddersList.Margin = new System.Windows.Forms.Padding(2);
-            this.FeddersList.Name = "FeddersList";
-            this.FeddersList.Size = new System.Drawing.Size(87, 41);
-            this.FeddersList.TabIndex = 3;
-            this.FeddersList.Text = "Feeders";
-            this.FeddersList.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -151,19 +141,6 @@ namespace LoginForm
             this.button1.TabIndex = 4;
             this.button1.Text = "Авторизация";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // manual
-            // 
-            this.manual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.manual.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.manual.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.manual.Location = new System.Drawing.Point(388, 132);
-            this.manual.Margin = new System.Windows.Forms.Padding(2);
-            this.manual.Name = "manual";
-            this.manual.Size = new System.Drawing.Size(125, 41);
-            this.manual.TabIndex = 7;
-            this.manual.Text = "Manual Feeding";
-            this.manual.UseVisualStyleBackColor = false;
             // 
             // comboBox1
             // 
@@ -185,23 +162,76 @@ namespace LoginForm
             this.back1.UseVisualStyleBackColor = true;
             this.back1.Click += new System.EventHandler(this.back_Click);
             // 
+            // Feeders
+            // 
+            this.Feeders.AutoSize = true;
+            this.Feeders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Feeders.Location = new System.Drawing.Point(412, 30);
+            this.Feeders.Name = "Feeders";
+            this.Feeders.Size = new System.Drawing.Size(68, 20);
+            this.Feeders.TabIndex = 12;
+            this.Feeders.Text = "Feeders";
+            // 
+            // mf
+            // 
+            this.mf.AutoSize = true;
+            this.mf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.mf.Location = new System.Drawing.Point(388, 110);
+            this.mf.Name = "mf";
+            this.mf.Size = new System.Drawing.Size(118, 20);
+            this.mf.TabIndex = 13;
+            this.mf.Text = "Manual feeding";
+            // 
+            // DayPortion
+            // 
+            this.DayPortion.AutoSize = true;
+            this.DayPortion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DayPortion.Location = new System.Drawing.Point(329, 141);
+            this.DayPortion.Name = "DayPortion";
+            this.DayPortion.Size = new System.Drawing.Size(94, 20);
+            this.DayPortion.TabIndex = 14;
+            this.DayPortion.Text = "Day portion:";
+            this.DayPortion.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // FeederSize
+            // 
+            this.FeederSize.AutoSize = true;
+            this.FeederSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FeederSize.Location = new System.Drawing.Point(329, 189);
+            this.FeederSize.Name = "FeederSize";
+            this.FeederSize.Size = new System.Drawing.Size(96, 20);
+            this.FeederSize.TabIndex = 15;
+            this.FeederSize.Text = "Feeder size:";
+            // 
+            // fs
+            // 
+            this.fs.Location = new System.Drawing.Point(431, 191);
+            this.fs.Margin = new System.Windows.Forms.Padding(2);
+            this.fs.Name = "fs";
+            this.fs.Size = new System.Drawing.Size(68, 20);
+            this.fs.TabIndex = 16;
+            // 
             // Simulation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 292);
+            this.Controls.Add(this.fs);
+            this.Controls.Add(this.FeederSize);
+            this.Controls.Add(this.DayPortion);
+            this.Controls.Add(this.mf);
+            this.Controls.Add(this.Feeders);
             this.Controls.Add(this.back1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.manual);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.dp);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.FeddersList);
             this.Controls.Add(this.FullFeeder);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Simulation";
             this.Text = "Simulation";
+            this.Load += new System.EventHandler(this.Simulation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -213,15 +243,18 @@ namespace LoginForm
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button FullFeeder;
-        private System.Windows.Forms.Button FeddersList;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox dp;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Button stop;
-        private System.Windows.Forms.Button manual;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button back1;
         private System.Windows.Forms.Label food;
         private System.Windows.Forms.Label days;
+        private System.Windows.Forms.Label Feeders;
+        private System.Windows.Forms.Label mf;
+        private System.Windows.Forms.Label DayPortion;
+        private System.Windows.Forms.Label FeederSize;
+        private System.Windows.Forms.TextBox fs;
     }
 }

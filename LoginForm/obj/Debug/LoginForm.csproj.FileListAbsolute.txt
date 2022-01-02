@@ -109,18 +109,13 @@ C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\ZstdNet.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\K4os.Compression.LZ4.Streams.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Security.Permissions.dll
-C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Configuration.ConfigurationManager.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Memory.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\K4os.Compression.LZ4.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\K4os.Hash.xxHash.dll
-C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Windows.Extensions.dll
-C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Security.Cryptography.ProtectedData.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\Presenter.pdb
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Data.xml
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\Models.pdb
 C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.csproj.AssemblyReference.cache
-C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.csproj.SuggestedBindingRedirects.cache
 C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.exe.config
 C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.AdminForm.resources
 C:\Users\EL LI\Desktop\Cat\LoginForm\obj\Debug\LoginForm.AuthUserForm.resources
@@ -177,3 +172,9 @@ C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\MySql.Data.xml
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\Models.pdb
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.CopyComplete
+C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Web.dll
+C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Buffers.dll
+C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Web.xml

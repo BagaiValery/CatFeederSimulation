@@ -6,14 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Models.Entity
 {
     public class DB
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=catfeeder");
-      //  MySqlConnection connection = new MySqlConnection("SERVER=localhost;DATABASE=catfeeder;UID=root;PASSWORD=root");
+        MySqlConnection connection = new MySqlConnection("server=localhost;username=root;password=root;database=catfeeder");
+        //        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=catfeeder");
 
 
+ 
         public void OpenConnection()
         {
             if (connection.State == System.Data.ConnectionState.Closed)

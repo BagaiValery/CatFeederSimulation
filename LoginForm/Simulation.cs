@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace LoginForm
 {
@@ -62,6 +63,22 @@ namespace LoginForm
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Simulation_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FeddersList_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
