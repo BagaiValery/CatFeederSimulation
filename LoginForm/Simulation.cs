@@ -10,8 +10,13 @@ using System.Windows.Forms;
 
 namespace LoginForm
 {
+
     public partial class Simulation : Form
     {
+        int simulationDays = 0;
+        int maxFood = 5000;
+        int portion = 250;
+
         public Boolean simulationOn = false; 
         public Simulation()
         {
@@ -21,10 +26,7 @@ namespace LoginForm
         private async void start_Click(object sender, EventArgs e)
         {
             simulationOn = true;
-            int simulationDays = 0;
 
-            int maxFood = 5000;
-            int portion = 250;
             while (simulationOn && maxFood > 0)
             {
                 simulationDays++;

@@ -11,6 +11,8 @@ namespace Models.Entity
     public class DB
     {
         MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=catfeeder");
+      //  MySqlConnection connection = new MySqlConnection("SERVER=localhost;DATABASE=catfeeder;UID=root;PASSWORD=root");
+
 
         public void OpenConnection()
         {
@@ -85,6 +87,8 @@ namespace Models.Entity
             string[] values = new string[table.Rows.Count];
 
             table.Rows.CopyTo(values, 0);
+
+
             return values;
         }
 

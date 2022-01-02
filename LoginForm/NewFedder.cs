@@ -62,5 +62,15 @@ namespace LoginForm
             for (int i = 0; i < c; i++)
                 userList.Items.Add(U[i]);
         }
+
+        private void userList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NewFeederName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
