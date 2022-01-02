@@ -18,17 +18,19 @@ namespace LoginForm
             InitializeComponent();
         }
 
+        DateTime simulationDays = DateTime.Now;
+
+        int maxFood = 5000;
+        int portion = 250;
+
         private async void start_Click(object sender, EventArgs e)
         {
             simulationOn = true;
-            int simulationDays = 0;
-
-            int maxFood = 5000;
-            int portion = 250;
+           
             while (simulationOn && maxFood > 0)
             {
-                simulationDays++;
-                this.days.Text = "Days: " + simulationDays.ToString();
+                simulationDays = simulationDays.AddHours(5);
+                this.days.Text = "Time: " + simulationDays.TimeOfDay.ToString();
                 maxFood -= portion;
                 this.food.Text = "Food: " + maxFood.ToString();
                 await Task.Delay(1000);
@@ -44,15 +46,6 @@ namespace LoginForm
             auth.Show();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void days_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void stop_Click(object sender, EventArgs e)
         {
