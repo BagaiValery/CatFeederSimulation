@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace LoginForm
 {
+
     public partial class Simulation : Form
     {
+        DateTime simulationDays = DateTime.Now;
+        int maxFood = 5000;
+        int portion = 250;
+
         public Boolean simulationOn = false; 
         public Simulation()
         {
             InitializeComponent();
         }
 
-        DateTime simulationDays = DateTime.Now;
-
-        int maxFood = 5000;
-        int portion = 250;
-
         private async void start_Click(object sender, EventArgs e)
         {
             simulationOn = true;
-           
+
             while (simulationOn && maxFood > 0)
             {
                 simulationDays = simulationDays.AddHours(5);
