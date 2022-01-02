@@ -143,9 +143,9 @@ namespace LoginForm
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
+ //       private System.Windows.Forms.Button button2;
+ //       private System.Windows.Forms.Button button3;
+  //      private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button AddFedder;
         private System.Windows.Forms.Button AddUser;
         private System.Windows.Forms.Button RevieLogs;

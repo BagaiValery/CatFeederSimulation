@@ -51,9 +51,9 @@ namespace LoginForm
 
         private void back1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Authorization auth = new Authorization();
-            auth.Show();
+            this.Hide();
+    //        Authorization auth = new Authorization();
+     //       auth.Show();
         }
     }
 }

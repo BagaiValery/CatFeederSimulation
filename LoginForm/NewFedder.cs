@@ -47,9 +47,9 @@ namespace LoginForm
 
         private void back_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Authorization auth = new Authorization();
-            auth.Show();
+            this.Hide();
+       //     Authorization auth = new Authorization();
+       //     auth.Show();
         }
 
         private void userList_DropDown(object sender, EventArgs e)
