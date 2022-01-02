@@ -18,13 +18,50 @@ namespace LoginForm
         int maxFood = 5000;
         int portion = 250;
 
+
+        MySqlConnection con = new MySqlConnection("server=localhost;username=root;password=root;database=catfeeder");
+        MySqlCommand cmd;
+        MySqlDataAdapter da;
+        DataTable dt;
+        string sql;
+
         public Boolean simulationOn = false; 
         public Simulation()
         {
             InitializeComponent();
-        }
+            try
+            {
+                con.Open();
+                cmd = new MySqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = "SELECT * FROM `feeders`";
+                da = new MySqlDataAdapter();
+                da.SelectCommand = cmd;
+                dt = new DataTable();
+                da.Fill(dt);
 
-        private async void start_Click(object sender, EventArgs e)
+                feedersList.DataSource = dt;
+                feedersList.DisplayMember = "feederName";
+                feedersList.ValueMember = "feederName";
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                con.Close();
+
+            }
+        
+
+    }
+
+    private async void start_Click(object sender, EventArgs e)
         {
             simulationOn = true;
 

@@ -38,7 +38,7 @@ namespace LoginForm
             this.dp = new System.Windows.Forms.TextBox();
             this.FullFeeder = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.feedersList = new System.Windows.Forms.ComboBox();
             this.back1 = new System.Windows.Forms.Button();
             this.Feeders = new System.Windows.Forms.Label();
             this.mf = new System.Windows.Forms.Label();
@@ -141,14 +141,14 @@ namespace LoginForm
             this.button1.Text = "Авторизация";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // feedersList
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(408, 44);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 8;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.feedersList.FormattingEnabled = true;
+            this.feedersList.Location = new System.Drawing.Point(408, 44);
+            this.feedersList.Name = "feedersList";
+            this.feedersList.Size = new System.Drawing.Size(121, 21);
+            this.feedersList.TabIndex = 8;
+            this.feedersList.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // back1
             // 
@@ -218,14 +218,14 @@ namespace LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 310);
+            this.ClientSize = new System.Drawing.Size(574, 292);
             this.Controls.Add(this.fs);
             this.Controls.Add(this.FeederSize);
             this.Controls.Add(this.DayPortion);
             this.Controls.Add(this.mf);
             this.Controls.Add(this.Feeders);
             this.Controls.Add(this.back1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.feedersList);
             this.Controls.Add(this.dp);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.FullFeeder);
@@ -250,7 +250,7 @@ namespace LoginForm
         private System.Windows.Forms.TextBox dp;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Button stop;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox feedersList;
         private System.Windows.Forms.Button back1;
         private System.Windows.Forms.Label food;
         private System.Windows.Forms.Label days;
