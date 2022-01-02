@@ -55,19 +55,19 @@ namespace LoginForm
             this.panel1.Controls.Add(this.days);
             this.panel1.Controls.Add(this.start);
             this.panel1.Controls.Add(this.stop);
-            this.panel1.Location = new System.Drawing.Point(286, -3);
+            this.panel1.Location = new System.Drawing.Point(191, -2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 452);
+            this.panel1.Size = new System.Drawing.Size(133, 294);
             this.panel1.TabIndex = 0;
             // 
             // food
             // 
             this.food.AutoSize = true;
             this.food.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.food.Location = new System.Drawing.Point(39, 206);
-            this.food.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.food.Location = new System.Drawing.Point(26, 134);
             this.food.Name = "food";
-            this.food.Size = new System.Drawing.Size(95, 29);
+            this.food.Size = new System.Drawing.Size(63, 20);
             this.food.TabIndex = 12;
             this.food.Text = "Food: 0";
             // 
@@ -75,18 +75,18 @@ namespace LoginForm
             // 
             this.days.AutoSize = true;
             this.days.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.days.Location = new System.Drawing.Point(39, 142);
-            this.days.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.days.Location = new System.Drawing.Point(26, 92);
             this.days.Name = "days";
-            this.days.Size = new System.Drawing.Size(94, 29);
+            this.days.Size = new System.Drawing.Size(60, 20);
             this.days.TabIndex = 11;
             this.days.Text = "Time: 0";
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(3, 272);
+            this.start.Location = new System.Drawing.Point(2, 177);
+            this.start.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(87, 34);
+            this.start.Size = new System.Drawing.Size(58, 22);
             this.start.TabIndex = 5;
             this.start.Text = "start";
             this.start.UseVisualStyleBackColor = true;
@@ -94,9 +94,10 @@ namespace LoginForm
             // 
             // stop
             // 
-            this.stop.Location = new System.Drawing.Point(110, 272);
+            this.stop.Location = new System.Drawing.Point(73, 177);
+            this.stop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.stop.Name = "stop";
-            this.stop.Size = new System.Drawing.Size(87, 34);
+            this.stop.Size = new System.Drawing.Size(58, 22);
             this.stop.TabIndex = 6;
             this.stop.Text = "stop";
             this.stop.UseVisualStyleBackColor = true;
@@ -104,18 +105,11 @@ namespace LoginForm
             // 
             // dp
             // 
-<<<<<<< HEAD
-            this.dp.Location = new System.Drawing.Point(431, 143);
-            this.dp.Margin = new System.Windows.Forms.Padding(2);
+            this.dp.Location = new System.Drawing.Point(465, 134);
+            this.dp.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dp.Name = "dp";
-            this.dp.Size = new System.Drawing.Size(68, 20);
+            this.dp.Size = new System.Drawing.Size(47, 20);
             this.dp.TabIndex = 1;
-=======
-            this.textBox2.Location = new System.Drawing.Point(618, 294);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 26);
-            this.textBox2.TabIndex = 1;
->>>>>>> 76a5e13f94d8aa7ba5427d4fce920b718fb66bdf
             // 
             // FullFeeder
             // 
@@ -126,70 +120,42 @@ namespace LoginForm
             this.FullFeeder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.FullFeeder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FullFeeder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FullFeeder.Location = new System.Drawing.Point(-2, -3);
+            this.FullFeeder.Location = new System.Drawing.Point(-1, -2);
+            this.FullFeeder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FullFeeder.Name = "FullFeeder";
-            this.FullFeeder.Size = new System.Drawing.Size(146, 63);
+            this.FullFeeder.Size = new System.Drawing.Size(97, 41);
             this.FullFeeder.TabIndex = 1;
             this.FullFeeder.Text = "Пополнить кормушку";
             this.FullFeeder.UseVisualStyleBackColor = false;
             // 
-<<<<<<< HEAD
-=======
-            // FeddersList
-            // 
-            this.FeddersList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.FeddersList.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.FeddersList.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FeddersList.Location = new System.Drawing.Point(618, 40);
-            this.FeddersList.Name = "FeddersList";
-            this.FeddersList.Size = new System.Drawing.Size(130, 63);
-            this.FeddersList.TabIndex = 3;
-            this.FeddersList.Text = "Feeders";
-            this.FeddersList.UseVisualStyleBackColor = false;
-            // 
->>>>>>> 76a5e13f94d8aa7ba5427d4fce920b718fb66bdf
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(-2, 68);
+            this.button1.Location = new System.Drawing.Point(-1, 44);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(146, 55);
+            this.button1.Size = new System.Drawing.Size(97, 36);
             this.button1.TabIndex = 4;
             this.button1.Text = "Авторизация";
             this.button1.UseVisualStyleBackColor = false;
             // 
-<<<<<<< HEAD
-=======
-            // manual
-            // 
-            this.manual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.manual.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.manual.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.manual.Location = new System.Drawing.Point(582, 203);
-            this.manual.Name = "manual";
-            this.manual.Size = new System.Drawing.Size(188, 63);
-            this.manual.TabIndex = 7;
-            this.manual.Text = "Manual Feeding";
-            this.manual.UseVisualStyleBackColor = false;
-            // 
->>>>>>> 76a5e13f94d8aa7ba5427d4fce920b718fb66bdf
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(588, 111);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.comboBox1.Location = new System.Drawing.Point(408, 44);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 28);
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 8;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // back1
             // 
-            this.back1.Location = new System.Drawing.Point(662, 382);
+            this.back1.Location = new System.Drawing.Point(441, 248);
+            this.back1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.back1.Name = "back1";
-            this.back1.Size = new System.Drawing.Size(87, 34);
+            this.back1.Size = new System.Drawing.Size(58, 22);
             this.back1.TabIndex = 9;
             this.back1.Text = "back";
             this.back1.UseVisualStyleBackColor = true;
@@ -199,7 +165,8 @@ namespace LoginForm
             // 
             this.Feeders.AutoSize = true;
             this.Feeders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Feeders.Location = new System.Drawing.Point(412, 30);
+            this.Feeders.Location = new System.Drawing.Point(461, 19);
+            this.Feeders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Feeders.Name = "Feeders";
             this.Feeders.Size = new System.Drawing.Size(68, 20);
             this.Feeders.TabIndex = 12;
@@ -209,7 +176,8 @@ namespace LoginForm
             // 
             this.mf.AutoSize = true;
             this.mf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.mf.Location = new System.Drawing.Point(388, 110);
+            this.mf.Location = new System.Drawing.Point(404, 90);
+            this.mf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.mf.Name = "mf";
             this.mf.Size = new System.Drawing.Size(118, 20);
             this.mf.TabIndex = 13;
@@ -219,7 +187,8 @@ namespace LoginForm
             // 
             this.DayPortion.AutoSize = true;
             this.DayPortion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DayPortion.Location = new System.Drawing.Point(329, 141);
+            this.DayPortion.Location = new System.Drawing.Point(350, 132);
+            this.DayPortion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.DayPortion.Name = "DayPortion";
             this.DayPortion.Size = new System.Drawing.Size(94, 20);
             this.DayPortion.TabIndex = 14;
@@ -230,7 +199,8 @@ namespace LoginForm
             // 
             this.FeederSize.AutoSize = true;
             this.FeederSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FeederSize.Location = new System.Drawing.Point(329, 189);
+            this.FeederSize.Location = new System.Drawing.Point(350, 177);
+            this.FeederSize.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FeederSize.Name = "FeederSize";
             this.FeederSize.Size = new System.Drawing.Size(96, 20);
             this.FeederSize.TabIndex = 15;
@@ -238,26 +208,22 @@ namespace LoginForm
             // 
             // fs
             // 
-            this.fs.Location = new System.Drawing.Point(431, 191);
-            this.fs.Margin = new System.Windows.Forms.Padding(2);
+            this.fs.Location = new System.Drawing.Point(465, 177);
+            this.fs.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.fs.Name = "fs";
-            this.fs.Size = new System.Drawing.Size(68, 20);
+            this.fs.Size = new System.Drawing.Size(47, 20);
             this.fs.TabIndex = 16;
             // 
             // Simulation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(533, 292);
+            this.ClientSize = new System.Drawing.Size(574, 310);
             this.Controls.Add(this.fs);
             this.Controls.Add(this.FeederSize);
             this.Controls.Add(this.DayPortion);
             this.Controls.Add(this.mf);
             this.Controls.Add(this.Feeders);
-=======
-            this.ClientSize = new System.Drawing.Size(800, 449);
->>>>>>> 76a5e13f94d8aa7ba5427d4fce920b718fb66bdf
             this.Controls.Add(this.back1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dp);
@@ -265,6 +231,7 @@ namespace LoginForm
             this.Controls.Add(this.FullFeeder);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Simulation";
             this.Text = "Simulation";
             this.Load += new System.EventHandler(this.Simulation_Load);
