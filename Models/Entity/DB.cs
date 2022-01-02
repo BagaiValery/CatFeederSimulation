@@ -86,7 +86,7 @@ namespace Models.Entity
             adapter.SelectCommand = commandChoose;
             adapter.Fill(table);
 
-            string[] values = new string[table.Rows.Count];
+            var values = new string[table.Rows.Count];
 
             table.Rows.CopyTo(values, 0);
 

@@ -172,9 +172,16 @@ C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\MySql.Data.xml
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\Models.pdb
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\obj\Debug\LoginForm.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Data.EntityFramework.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Web.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Buffers.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Data.EntityFramework.xml
 C:\Users\EL LI\Desktop\Cat\LoginForm\bin\Debug\MySql.Web.xml
+=======
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\MySql.Web.dll
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\LoginForm\bin\Debug\MySql.Web.xml
+>>>>>>> 76a5e13f94d8aa7ba5427d4fce920b718fb66bdf
