@@ -55,3 +55,22 @@ C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Models\obj\Debug\Mo
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Models\obj\Debug\Models.dll
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Models\obj\Debug\Models.pdb
 C:\Users\EL LI\Desktop\Cat\Models\bin\Debug\System.Numerics.Vectors.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\Models.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\Models.pdb
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\MySql.Data.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\Google.Protobuf.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\ZstdNet.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\BouncyCastle.Crypto.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\Ubiety.Dns.Core.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\System.Memory.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\System.Buffers.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\K4os.Compression.LZ4.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\K4os.Hash.xxHash.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\System.Numerics.Vectors.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\bin\Debug\MySql.Data.xml
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\obj\Debug\Models.csprojAssemblyReference.cache
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\obj\Debug\Models.csproj.CopyComplete
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\obj\Debug\Models.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Models\obj\Debug\Models.pdb

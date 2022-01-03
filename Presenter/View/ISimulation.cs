@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Presenter.View
 {
-    internal interface ISimulation
+    public interface ISimulation
     {
+        string FeederText { get; set; }
+        string BowlText { get; set; }
+        string MeowText { get; set; }
     }
 }

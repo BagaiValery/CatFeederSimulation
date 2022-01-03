@@ -2,69 +2,68 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using Models.Entity;
 
 namespace Models.Service
 {
-    class SimulationServise : ISimulationServise
+    public class SimulationServise : ISimulationServise
     {
-        public static int TimeBoost { get; set; }
-        private static int SimStop;
+        private int TimeBoost = 1;
+        private int SimStop;
+        public Feeder feeder;
+        public CatService cat1;
+        public void StartSim()
+        {
+            SimStop = 0;
 
-         /*       public void StartSim()
-                {
-                    SimStop = 0;
-                    CatService cat = new CatService("Barsik");
-                    Task ThreadSim = new Task(new ThreadStart(SimEnvironment));
-                    ThreadSim.Start();
-                }
-                public void StopSim()
-                {
-                    SimStop = 1;
+            feeder = new Feeder
+            {
+                MountOfFood = 100
+            };
+            cat1 = new CatService("Barsik");
+            TimeNow = DateTime.Now;
 
-                }
-                private static void SimEnvironment()
+            Task ThreadSim = new Task(SimEnvironment);
+            ThreadSim.Start();
+        }
+        public void StopSim()
+        {
+            SimStop = 1;
+        }
+        private void SimEnvironment()
+        {
+            feeder.FeedingSchedule.portion = 50;
+
+            feeder.FeedingSchedule.FeedTime.Add(DateTime.Now.AddHours(1));
+            while (SimStop == 0)
+            {
+                if (TimeNow > cat1.ThisCat.TimeToEat)
                 {
-                    CatService cat1 = new CatService("Barsik");
-                    while (SimStop == 0)
+                    cat1.Eat(feeder);
+                    cat1.ThisCat.TimeToEat = cat1.ThisCat.TimeToEat.AddHours(12);
+                }
+                foreach (DateTime FeedTime in feeder.FeedingSchedule.FeedTime)
+                    if (TimeNow.Day == FeedTime.Day && TimeNow.Hour == FeedTime.Hour && TimeNow.Minute == FeedTime.Minute)
                     {
-                        if (TimeNow.Equals(cat1.ThisCat.TimeToEat))
-                        {
-        <<<<<<< HEAD
-                            Feeder feeder1 = new Feeder(); 
-        =======
-                            Feeder feeder1 = new Feeder();
-        >>>>>>> c2734142e0200a69946967240fc985ec632ae35b
-                                cat1.Eat(feeder1);
-                                cat1.ThisCat.TimeToEat.AddHours(12);
-                        }
-                        Feeder feeder = new Feeder();
-                            if (TimeNow.Equals(feeder.FeedingSchedule))
-                            {
-                                feeder.Feed(feeder.FeedingSchedule.portion);
-                            }
-                        System.Threading.Thread.Sleep(1000 / TimeBoost);
-                        TimeNow.AddMinutes(1);
+                        feeder.Feed(feeder.FeedingSchedule.portion);
+                        feeder.FeedingSchedule.FeedTime.Add(FeedTime.AddHours(11));
+                        break;
                     }
-                }
-        */
-        public void TimeBoostSet(int times)
-        {
-            if (times < 1 || times > 1000)
-                throw new Exception("Помедленнее!");
-            else TimeBoost = times;
+                Thread.Sleep(1000 / TimeBoost);
+                TimeNow = TimeNow.AddMinutes(1);
+            }
         }
-
-        void ISimulationServise.StartSim()
+        public void TimeBoostUp()
         {
-            throw new NotImplementedException();
+            if (TimeBoost < 900) TimeBoost += 100;
         }
-
-        void ISimulationServise.StopSim()
+        public void TimeBoostDown()
         {
-            throw new NotImplementedException();
+            if (TimeBoost > 100) TimeBoost -= 100;
         }
-
-        private static DateTime TimeNow = new DateTime();
+        private static DateTime TimeNow;
     }
 }

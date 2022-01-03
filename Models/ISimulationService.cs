@@ -10,6 +10,7 @@ namespace Models
     {
         void StartSim();
         void StopSim();
-        void TimeBoostSet(int times);
+        void TimeBoostUp();
+        void TimeBoostDown();
     }
 }

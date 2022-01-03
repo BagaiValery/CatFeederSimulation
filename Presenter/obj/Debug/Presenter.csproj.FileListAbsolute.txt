@@ -61,3 +61,24 @@ C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Presenter\obj\Debug
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Presenter\obj\Debug\Presenter.dll
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Presenter\obj\Debug\Presenter.pdb
 C:\Users\EL LI\Desktop\Cat\Presenter\bin\Debug\System.Numerics.Vectors.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\Presenter.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\Presenter.pdb
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\Models.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\MySql.Data.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\Google.Protobuf.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\ZstdNet.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\BouncyCastle.Crypto.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\Ubiety.Dns.Core.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\System.Memory.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\System.Buffers.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\K4os.Compression.LZ4.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\K4os.Hash.xxHash.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\System.Numerics.Vectors.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\Models.pdb
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\bin\Debug\MySql.Data.xml
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\obj\Debug\Presenter.csprojAssemblyReference.cache
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\obj\Debug\Presenter.csproj.CoreCompileInputs.cache
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\obj\Debug\Presenter.csproj.CopyComplete
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\obj\Debug\Presenter.dll
+D:\Documents\Study\Feeder2\CatFeederSimulation\Presenter\obj\Debug\Presenter.pdb
