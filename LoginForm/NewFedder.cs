@@ -41,8 +41,13 @@ namespace LoginForm
 
         private void creat_Click(object sender, EventArgs e)
         {
-            string name = NewFeederName.Text;
-            label.Text = NewFeederName.Text;
+            FeederPresenter users = new FeederPresenter(this);
+            if (users.MessAddFeederForUser() == 1)
+                MessageBox.Show("Кормушка была создана");
+            else
+                    MessageBox.Show("Возникли проблемы с созданием");
+            
+
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -55,12 +60,10 @@ namespace LoginForm
         private void userList_DropDown(object sender, EventArgs e)
         {
             FeederPresenter users = new FeederPresenter(this);
-            int c = users.MessCount();
-            string[] U = new string[c];
-            U = users.Users();
+            userList.DataSource = users.Users();
+            userList.DisplayMember = "login";
+            //userList.ValueMember = "id";
 
-            for (int i = 0; i < c; i++)
-                userList.Items.Add(U[i]);
         }
 
         private void userList_SelectedIndexChanged(object sender, EventArgs e)
@@ -68,9 +71,5 @@ namespace LoginForm
 
         }
 
-        private void NewFeederName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

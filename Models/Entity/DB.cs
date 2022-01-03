@@ -61,7 +61,20 @@ namespace Models.Entity
             return table.Rows.Count;
         }
 
-        public int Find(string TableName, string column)
+        //public int Find(string TableName, string column)
+        //{
+        //    DataTable table = new DataTable();
+        //    MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+        //    MySqlCommand commandChoose = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
+
+        //    adapter.SelectCommand = commandChoose;
+        //    adapter.Fill(table);
+
+        //    return table.Rows.Count;
+        //}
+
+        public DataTable GetAll(string TableName, string column)
         {
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -71,25 +84,7 @@ namespace Models.Entity
             adapter.SelectCommand = commandChoose;
             adapter.Fill(table);
 
-            return table.Rows.Count;
-        }
-
-        public string[] GetAll(string TableName, string column)
-        {
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-
-            MySqlCommand commandChoose = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
-
-            adapter.SelectCommand = commandChoose;
-            adapter.Fill(table);
-
-            var values = new string[table.Rows.Count];
-
-            table.Rows.CopyTo(values, 0);
-
-
-            return values;
+            return table;
         }
 
         public int Add(string TableName, string first, string second, string valueFirst, string valueSecond)
