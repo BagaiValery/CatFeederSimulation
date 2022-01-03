@@ -51,13 +51,21 @@ namespace Models.Service
                         feeder.FeedingSchedule.FeedTime.Add(FeedTime.AddHours(11));
                         break;
                     }
-                Thread.Sleep(1000 / TimeBoost);
-                TimeNow = TimeNow.AddMinutes(1);
+                if (TimeBoost > 1000)
+                {
+                    TimeNow = TimeNow.AddMinutes(1);
+                    Thread.Sleep(10000 / TimeBoost);
+                }
+                else
+                {
+                    TimeNow = TimeNow.AddSeconds(1);
+                    Thread.Sleep(1000 / TimeBoost);
+                }
             }
         }
         public void TimeBoostUp()
         {
-            if (TimeBoost < 1000) TimeBoost *= 10;
+            if (TimeBoost < 10000) TimeBoost *= 10;
         }
         public void TimeBoostDown()
         {

@@ -225,7 +225,7 @@ namespace LoginForm
             // 
             this.Time.Location = new System.Drawing.Point(-2, 0);
             this.Time.Name = "Time";
-            this.Time.Size = new System.Drawing.Size(134, 26);
+            this.Time.Size = new System.Drawing.Size(166, 26);
             this.Time.TabIndex = 17;
             // 
             // ManualFeeding
