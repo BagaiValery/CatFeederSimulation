@@ -148,7 +148,7 @@ namespace LoginForm
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            presenter.StopSimulation();
+   //         presenter.StopSimulation();
             SimStart = false;
             if (initTime) return;
             try
