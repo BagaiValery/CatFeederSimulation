@@ -160,7 +160,7 @@ namespace LoginForm
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            presenter.StopSimulation();
+   //         presenter.StopSimulation();
             SimStart = false;
             if (initTime) return;
             try
@@ -193,10 +193,6 @@ namespace LoginForm
         private void Simulation_Load(object sender, EventArgs e)
         {
             presenter = new SimulationPresenter(this);
-            PortionText = "0";
-            FeedingText = "0";
-            FeederText = "0";
-            BowlText = "0";
         }
 
         private void label1_Click(object sender, EventArgs e){}

@@ -15,7 +15,9 @@ namespace LoginForm
     public partial class NewFedder : Form, IFeeder
     {
         public string feederNameTxt { get { return NewFeederName.Text; } set => NewFeederName.Text=value; }
-        public string feederUserTxt { get { return userList.SelectedItem.ToString(); } 
+   //     public string feederUserTxt { get { return userList.SelectedItem.ToString(); } 
+        public string feederUserTxt { get { return userList.Text; } 
+
             set {
                 userList.Items.Add(value); 
             } }

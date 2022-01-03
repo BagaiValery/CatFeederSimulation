@@ -47,7 +47,8 @@ namespace Presenter.Presenters
         public int MessAddFeederForUser()
         {
             DB feeder = new DB();
-            return FeederView.Mess = feeder.Add("feeders", "user", "feederName",  FeederView.feederUserTxt, FeederView.feederNameTxt);
+    //        return FeederView.Mess = feeder.Add("feeders", "user", "feederName",  FeederView.feederUserTxt, FeederView.feederNameTxt);
+            return FeederView.Mess = feeder.Add("feeders", "user", "feederName", FeederView.feederUserTxt, FeederView.feederNameTxt);
         }
 
         public int MessAddInfoFeeder()
