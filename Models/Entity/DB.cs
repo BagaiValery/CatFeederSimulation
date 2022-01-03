@@ -78,19 +78,33 @@ namespace Models.Entity
 
         public string[] GetAll(string TableName, string column)
         {
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            /*   DataTable table = new DataTable();
+               MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand commandChoose = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
+               MySqlCommand commandChoose = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
 
-            adapter.SelectCommand = commandChoose;
-            adapter.Fill(table);
+               adapter.SelectCommand = commandChoose;
+               adapter.Fill(table);
 
-            var values = new string[table.Rows.Count];
+               var values = new string[table.Rows.Count];
 
-            table.Rows.CopyTo(values, 0);
+               table.Rows.CopyTo(values, 0);
+              */
 
+            List<String> userData = new List<String>();
+            MySqlCommand cmd = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
 
+            connection.Open();
+            MySqlDataReader dbList = cmd.ExecuteReader();
+
+            while (dbList.Read())
+            {
+                userData.Add(dbList.GetString(column));
+            }
+            var values = new string[userData.Count];
+            for (int i = 0; i < userData.Count; i++)
+                values[i] = userData[i];
+            connection.Close();
             return values;
         }
 

@@ -58,7 +58,7 @@ namespace LoginForm
             int c = users.MessCount();
             string[] U = new string[c];
             U = users.Users();
-
+            userList.Items.Clear();
             for (int i = 0; i < c; i++)
                 userList.Items.Add(U[i]);
         }
