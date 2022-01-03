@@ -58,12 +58,12 @@ namespace Models.Service
         }
         public void TimeBoostUp()
         {
-            if (TimeBoost < 900) TimeBoost += 100;
+            if (TimeBoost < 1000) TimeBoost *= 10;
         }
         public void TimeBoostDown()
         {
-            if (TimeBoost > 100) TimeBoost -= 100;
+            if (TimeBoost > 1) TimeBoost /= 10;
         }
-        private static DateTime TimeNow;
+        public DateTime TimeNow;
     }
 }

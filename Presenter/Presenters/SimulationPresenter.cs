@@ -28,6 +28,18 @@ namespace Presenter.Presenters
         {
             _SimulationServise.StopSim();
         }
+        public void FeedNow()
+        {
+            try
+            {
+                int portion = Int32.Parse(simulationView.FeedengText);
+                _SimulationServise.feeder.Feed(portion);
+            }
+            catch (FormatException)
+            {
+                simulationView.FeedengText = "Error";
+            }
+        }
         public void PresentFeeder()
         {
             if (_SimulationServise != null)
@@ -37,6 +49,11 @@ namespace Presenter.Presenters
         {
             if (_SimulationServise != null)
                 simulationView.BowlText = _SimulationServise.feeder.FoodInBowl.ToString();
+        }
+        public void PresentTime()
+        {
+            if (_SimulationServise != null)
+                simulationView.TimeText = _SimulationServise.TimeNow.ToString();
         }
         public void Meow()
         {

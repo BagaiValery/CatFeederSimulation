@@ -11,5 +11,7 @@ namespace Presenter.View
         string FeederText { get; set; }
         string BowlText { get; set; }
         string MeowText { get; set; }
+        string TimeText { get; set; }
+        string FeedengText { get; set; }
     }
 }

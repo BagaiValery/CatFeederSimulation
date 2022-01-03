@@ -17,7 +17,7 @@ namespace LoginForm
     public partial class Simulation : Form, ISimulation
     {
         SimulationPresenter presenter;
-        bool SimStart = false;
+        bool SimStart;
         bool initTime = false;
 
         MySqlConnection con = new MySqlConnection("server=localhost;username=root;password=root;database=catfeeder");
@@ -112,6 +112,29 @@ namespace LoginForm
             }
         }
 
+        public string FeedengText
+        {
+            get
+            {
+                return ManualFeeding.Text;
+            }
+            set
+            {
+                ManualFeeding.Text = value;
+            }
+        }
+        public string TimeText
+        {
+            get
+            {
+                return Time.Text;
+            }
+            set
+            {
+                Time.Text = value;
+            }
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (SimStart)
@@ -119,6 +142,7 @@ namespace LoginForm
                 presenter.PresentBowl();
                 presenter.PresentFeeder();
                 presenter.Meow();
+                presenter.PresentTime();
             }
         }
 
@@ -126,7 +150,6 @@ namespace LoginForm
         {
             presenter.StopSimulation();
             SimStart = false;
-            this.days.Text = "Days:Hours:Min:Sec: \n" + 0 + ":" + 0 + ":" + 0 + ":" + 0;
             if (initTime) return;
             try
             {
@@ -151,7 +174,6 @@ namespace LoginForm
             finally
             {
                 con.Close();
-
             }
 
         }
@@ -168,8 +190,19 @@ namespace LoginForm
             presenter.FoolFeeder();
         }
 
+        private void Faster_Click(object sender, EventArgs e)
+        {
+            presenter.BoostUp();
+        }
 
- //       private void tm_Click(object sender, EventArgs e){}
+        private void Slower_Click(object sender, EventArgs e)
+        {
+            presenter.BoostDown();
+        }
 
+        private void FeedNow_Click(object sender, EventArgs e)
+        {
+            presenter.FeedNow();
+        }
     }
 }

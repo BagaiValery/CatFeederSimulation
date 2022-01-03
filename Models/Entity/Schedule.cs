@@ -40,8 +40,9 @@ namespace Models.Entity
 
         public Schedule()
         {
-            this.portion = 0;
-            this.FeedTime.Clear();
+            FeedTime = new List<DateTime>();
+            portion = 0;
+            FeedTime.Clear();
         }
 
     }

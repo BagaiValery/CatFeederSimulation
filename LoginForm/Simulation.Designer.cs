@@ -32,14 +32,12 @@ namespace LoginForm
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Simulation));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.days = new System.Windows.Forms.Label();
             this.fs = new System.Windows.Forms.TextBox();
             this.start = new System.Windows.Forms.Button();
             this.FeederSize = new System.Windows.Forms.Label();
             this.stop = new System.Windows.Forms.Button();
             this.DayPortion = new System.Windows.Forms.Label();
             this.dp = new System.Windows.Forms.TextBox();
-            this.food = new System.Windows.Forms.Label();
             this.FullFeeder = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.feedersList = new System.Windows.Forms.ComboBox();
@@ -47,34 +45,28 @@ namespace LoginForm
             this.Feeders = new System.Windows.Forms.Label();
             this.mf = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Faster = new System.Windows.Forms.Button();
+            this.Slower = new System.Windows.Forms.Button();
+            this.Time = new System.Windows.Forms.TextBox();
+            this.ManualFeeding = new System.Windows.Forms.TextBox();
+            this.FeedNow = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.panel1.Controls.Add(this.days);
             this.panel1.Controls.Add(this.fs);
             this.panel1.Controls.Add(this.start);
             this.panel1.Controls.Add(this.FeederSize);
             this.panel1.Controls.Add(this.stop);
             this.panel1.Controls.Add(this.DayPortion);
             this.panel1.Controls.Add(this.dp);
+            this.panel1.Controls.Add(this.FullFeeder);
             this.panel1.Location = new System.Drawing.Point(286, 20);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(264, 322);
             this.panel1.TabIndex = 0;
-            // 
-            // days
-            // 
-            this.days.AutoSize = true;
-            this.days.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.days.Location = new System.Drawing.Point(78, 11);
-            this.days.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.days.Name = "days";
-            this.days.Size = new System.Drawing.Size(94, 29);
-            this.days.TabIndex = 11;
-            this.days.Text = "Time: 0";
             // 
             // fs
             // 
@@ -133,17 +125,6 @@ namespace LoginForm
             this.dp.Size = new System.Drawing.Size(68, 26);
             this.dp.TabIndex = 1;
             // 
-            // food
-            // 
-            this.food.AutoSize = true;
-            this.food.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.food.Location = new System.Drawing.Point(49, 356);
-            this.food.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.food.Name = "food";
-            this.food.Size = new System.Drawing.Size(95, 29);
-            this.food.TabIndex = 12;
-            this.food.Text = "Food: 0";
-            // 
             // FullFeeder
             // 
             this.FullFeeder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -153,9 +134,9 @@ namespace LoginForm
             this.FullFeeder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.FullFeeder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FullFeeder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FullFeeder.Location = new System.Drawing.Point(-2, -3);
+            this.FullFeeder.Location = new System.Drawing.Point(56, 3);
             this.FullFeeder.Name = "FullFeeder";
-            this.FullFeeder.Size = new System.Drawing.Size(146, 63);
+            this.FullFeeder.Size = new System.Drawing.Size(149, 69);
             this.FullFeeder.TabIndex = 1;
             this.FullFeeder.Text = "Пополнить кормушку";
             this.FullFeeder.UseVisualStyleBackColor = false;
@@ -166,7 +147,7 @@ namespace LoginForm
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(-2, 68);
+            this.button1.Location = new System.Drawing.Point(-2, 50);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 55);
             this.button1.TabIndex = 4;
@@ -176,7 +157,7 @@ namespace LoginForm
             // feedersList
             // 
             this.feedersList.FormattingEnabled = true;
-            this.feedersList.Location = new System.Drawing.Point(598, 68);
+            this.feedersList.Location = new System.Drawing.Point(598, 84);
             this.feedersList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.feedersList.Name = "feedersList";
             this.feedersList.Size = new System.Drawing.Size(235, 28);
@@ -197,7 +178,7 @@ namespace LoginForm
             // 
             this.Feeders.AutoSize = true;
             this.Feeders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Feeders.Location = new System.Drawing.Point(672, 20);
+            this.Feeders.Location = new System.Drawing.Point(662, 50);
             this.Feeders.Name = "Feeders";
             this.Feeders.Size = new System.Drawing.Size(104, 29);
             this.Feeders.TabIndex = 12;
@@ -207,7 +188,7 @@ namespace LoginForm
             // 
             this.mf.AutoSize = true;
             this.mf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.mf.Location = new System.Drawing.Point(628, 151);
+            this.mf.Location = new System.Drawing.Point(630, 204);
             this.mf.Name = "mf";
             this.mf.Size = new System.Drawing.Size(178, 29);
             this.mf.TabIndex = 13;
@@ -215,20 +196,69 @@ namespace LoginForm
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // Faster
+            // 
+            this.Faster.Location = new System.Drawing.Point(295, 348);
+            this.Faster.Name = "Faster";
+            this.Faster.Size = new System.Drawing.Size(106, 39);
+            this.Faster.TabIndex = 14;
+            this.Faster.Text = "Faster";
+            this.Faster.UseVisualStyleBackColor = true;
+            this.Faster.Click += new System.EventHandler(this.Faster_Click);
+            // 
+            // Slower
+            // 
+            this.Slower.Location = new System.Drawing.Point(428, 348);
+            this.Slower.Name = "Slower";
+            this.Slower.Size = new System.Drawing.Size(94, 39);
+            this.Slower.TabIndex = 15;
+            this.Slower.Text = "Slower";
+            this.Slower.UseVisualStyleBackColor = true;
+            this.Slower.Click += new System.EventHandler(this.Slower_Click);
+            // 
+            // Time
+            // 
+            this.Time.Location = new System.Drawing.Point(-2, 0);
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(134, 26);
+            this.Time.TabIndex = 17;
+            // 
+            // ManualFeeding
+            // 
+            this.ManualFeeding.Location = new System.Drawing.Point(622, 253);
+            this.ManualFeeding.Name = "ManualFeeding";
+            this.ManualFeeding.Size = new System.Drawing.Size(100, 26);
+            this.ManualFeeding.TabIndex = 18;
+            // 
+            // FeedNow
+            // 
+            this.FeedNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.FeedNow.Location = new System.Drawing.Point(728, 247);
+            this.FeedNow.Name = "FeedNow";
+            this.FeedNow.Size = new System.Drawing.Size(105, 39);
+            this.FeedNow.TabIndex = 19;
+            this.FeedNow.Text = "FeedNow";
+            this.FeedNow.UseVisualStyleBackColor = false;
+            this.FeedNow.Click += new System.EventHandler(this.FeedNow_Click);
             // 
             // Simulation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 449);
-            this.Controls.Add(this.food);
+            this.Controls.Add(this.FeedNow);
+            this.Controls.Add(this.ManualFeeding);
+            this.Controls.Add(this.Time);
+            this.Controls.Add(this.Slower);
+            this.Controls.Add(this.Faster);
             this.Controls.Add(this.mf);
             this.Controls.Add(this.Feeders);
             this.Controls.Add(this.back1);
             this.Controls.Add(this.feedersList);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.FullFeeder);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Simulation";
@@ -251,13 +281,16 @@ namespace LoginForm
         private System.Windows.Forms.Button stop;
         private System.Windows.Forms.ComboBox feedersList;
         private System.Windows.Forms.Button back1;
-        private System.Windows.Forms.Label food;
-        private System.Windows.Forms.Label days;
         private System.Windows.Forms.Label Feeders;
         private System.Windows.Forms.Label mf;
         private System.Windows.Forms.Label DayPortion;
         private System.Windows.Forms.Label FeederSize;
         private System.Windows.Forms.TextBox fs;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button Faster;
+        private System.Windows.Forms.Button Slower;
+        private System.Windows.Forms.TextBox Time;
+        private System.Windows.Forms.TextBox ManualFeeding;
+        private System.Windows.Forms.Button FeedNow;
     }
 }
