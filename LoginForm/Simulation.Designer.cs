@@ -29,12 +29,14 @@ namespace LoginForm
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Simulation));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.food = new System.Windows.Forms.Label();
-            this.days = new System.Windows.Forms.Label();
+            this.fs = new System.Windows.Forms.TextBox();
             this.start = new System.Windows.Forms.Button();
+            this.FeederSize = new System.Windows.Forms.Label();
             this.stop = new System.Windows.Forms.Button();
+            this.DayPortion = new System.Windows.Forms.Label();
             this.dp = new System.Windows.Forms.TextBox();
             this.FullFeeder = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,79 +44,86 @@ namespace LoginForm
             this.back1 = new System.Windows.Forms.Button();
             this.Feeders = new System.Windows.Forms.Label();
             this.mf = new System.Windows.Forms.Label();
-            this.DayPortion = new System.Windows.Forms.Label();
-            this.FeederSize = new System.Windows.Forms.Label();
-            this.fs = new System.Windows.Forms.TextBox();
-            this.tm = new System.Windows.Forms.Label();
-            this.timeMult = new System.Windows.Forms.TrackBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Faster = new System.Windows.Forms.Button();
+            this.Slower = new System.Windows.Forms.Button();
+            this.Time = new System.Windows.Forms.TextBox();
+            this.ManualFeeding = new System.Windows.Forms.TextBox();
+            this.FeedNow = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.timeMult)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSalmon;
-            this.panel1.Controls.Add(this.food);
-            this.panel1.Controls.Add(this.days);
+            this.panel1.Controls.Add(this.fs);
             this.panel1.Controls.Add(this.start);
+            this.panel1.Controls.Add(this.FeederSize);
             this.panel1.Controls.Add(this.stop);
-            this.panel1.Location = new System.Drawing.Point(191, 13);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Controls.Add(this.DayPortion);
+            this.panel1.Controls.Add(this.dp);
+            this.panel1.Controls.Add(this.FullFeeder);
+            this.panel1.Location = new System.Drawing.Point(286, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(176, 209);
+            this.panel1.Size = new System.Drawing.Size(264, 322);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // food
+            // fs
             // 
-            this.food.AutoSize = true;
-            this.food.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.food.Location = new System.Drawing.Point(13, 106);
-            this.food.Name = "food";
-            this.food.Size = new System.Drawing.Size(63, 20);
-            this.food.TabIndex = 12;
-            this.food.Text = "Food: 0";
-            // 
-            // days
-            // 
-            this.days.AutoSize = true;
-            this.days.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.days.Location = new System.Drawing.Point(11, 53);
-            this.days.Name = "days";
-            this.days.Size = new System.Drawing.Size(60, 20);
-            this.days.TabIndex = 11;
-            this.days.Text = "Time: 0";
+            this.fs.Location = new System.Drawing.Point(115, 159);
+            this.fs.Margin = new System.Windows.Forms.Padding(2);
+            this.fs.Name = "fs";
+            this.fs.Size = new System.Drawing.Size(68, 26);
+            this.fs.TabIndex = 16;
             // 
             // start
             // 
-            this.start.Location = new System.Drawing.Point(19, 164);
-            this.start.Margin = new System.Windows.Forms.Padding(2);
+            this.start.Location = new System.Drawing.Point(28, 252);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(58, 22);
+            this.start.Size = new System.Drawing.Size(87, 34);
             this.start.TabIndex = 5;
             this.start.Text = "start";
             this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
+            // FeederSize
+            // 
+            this.FeederSize.AutoSize = true;
+            this.FeederSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.FeederSize.Location = new System.Drawing.Point(26, 159);
+            this.FeederSize.Name = "FeederSize";
+            this.FeederSize.Size = new System.Drawing.Size(73, 29);
+            this.FeederSize.TabIndex = 15;
+            this.FeederSize.Text = "Bowl:";
+            // 
             // stop
             // 
-            this.stop.Location = new System.Drawing.Point(95, 164);
-            this.stop.Margin = new System.Windows.Forms.Padding(2);
+            this.stop.Location = new System.Drawing.Point(142, 252);
             this.stop.Name = "stop";
-            this.stop.Size = new System.Drawing.Size(58, 22);
+            this.stop.Size = new System.Drawing.Size(87, 34);
             this.stop.TabIndex = 6;
             this.stop.Text = "stop";
             this.stop.UseVisualStyleBackColor = true;
             this.stop.Click += new System.EventHandler(this.stop_Click);
             // 
+            // DayPortion
+            // 
+            this.DayPortion.AutoSize = true;
+            this.DayPortion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DayPortion.Location = new System.Drawing.Point(23, 92);
+            this.DayPortion.Name = "DayPortion";
+            this.DayPortion.Size = new System.Drawing.Size(76, 29);
+            this.DayPortion.TabIndex = 14;
+            this.DayPortion.Text = "Food:";
+            this.DayPortion.Click += new System.EventHandler(this.label1_Click);
+            // 
             // dp
             // 
-            this.dp.Location = new System.Drawing.Point(510, 134);
-            this.dp.Margin = new System.Windows.Forms.Padding(1);
+            this.dp.Location = new System.Drawing.Point(115, 95);
+            this.dp.Margin = new System.Windows.Forms.Padding(2);
             this.dp.Name = "dp";
-            this.dp.Size = new System.Drawing.Size(47, 20);
+            this.dp.Size = new System.Drawing.Size(68, 26);
             this.dp.TabIndex = 1;
-            this.dp.TextChanged += new System.EventHandler(this.dp_TextChanged);
             // 
             // FullFeeder
             // 
@@ -125,10 +134,9 @@ namespace LoginForm
             this.FullFeeder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.FullFeeder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FullFeeder.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FullFeeder.Location = new System.Drawing.Point(-1, -2);
-            this.FullFeeder.Margin = new System.Windows.Forms.Padding(2);
+            this.FullFeeder.Location = new System.Drawing.Point(56, 3);
             this.FullFeeder.Name = "FullFeeder";
-            this.FullFeeder.Size = new System.Drawing.Size(97, 41);
+            this.FullFeeder.Size = new System.Drawing.Size(149, 69);
             this.FullFeeder.TabIndex = 1;
             this.FullFeeder.Text = "Пополнить кормушку";
             this.FullFeeder.UseVisualStyleBackColor = false;
@@ -139,10 +147,9 @@ namespace LoginForm
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(-1, 44);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(-2, 50);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 36);
+            this.button1.Size = new System.Drawing.Size(146, 55);
             this.button1.TabIndex = 4;
             this.button1.Text = "Авторизация";
             this.button1.UseVisualStyleBackColor = false;
@@ -150,18 +157,18 @@ namespace LoginForm
             // feedersList
             // 
             this.feedersList.FormattingEnabled = true;
-            this.feedersList.Location = new System.Drawing.Point(399, 44);
+            this.feedersList.Location = new System.Drawing.Point(598, 84);
+            this.feedersList.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.feedersList.Name = "feedersList";
-            this.feedersList.Size = new System.Drawing.Size(158, 21);
+            this.feedersList.Size = new System.Drawing.Size(235, 28);
             this.feedersList.TabIndex = 8;
             this.feedersList.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // back1
             // 
-            this.back1.Location = new System.Drawing.Point(505, 250);
-            this.back1.Margin = new System.Windows.Forms.Padding(2);
+            this.back1.Location = new System.Drawing.Point(758, 385);
             this.back1.Name = "back1";
-            this.back1.Size = new System.Drawing.Size(58, 22);
+            this.back1.Size = new System.Drawing.Size(87, 34);
             this.back1.TabIndex = 9;
             this.back1.Text = "back";
             this.back1.UseVisualStyleBackColor = true;
@@ -171,10 +178,9 @@ namespace LoginForm
             // 
             this.Feeders.AutoSize = true;
             this.Feeders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Feeders.Location = new System.Drawing.Point(448, 13);
-            this.Feeders.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Feeders.Location = new System.Drawing.Point(662, 50);
             this.Feeders.Name = "Feeders";
-            this.Feeders.Size = new System.Drawing.Size(68, 20);
+            this.Feeders.Size = new System.Drawing.Size(104, 29);
             this.Feeders.TabIndex = 12;
             this.Feeders.Text = "Feeders";
             // 
@@ -182,93 +188,84 @@ namespace LoginForm
             // 
             this.mf.AutoSize = true;
             this.mf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.mf.Location = new System.Drawing.Point(419, 98);
-            this.mf.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.mf.Location = new System.Drawing.Point(630, 204);
             this.mf.Name = "mf";
-            this.mf.Size = new System.Drawing.Size(118, 20);
+            this.mf.Size = new System.Drawing.Size(178, 29);
             this.mf.TabIndex = 13;
             this.mf.Text = "Manual feeding";
             // 
-            // DayPortion
+            // timer1
             // 
-            this.DayPortion.AutoSize = true;
-            this.DayPortion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.DayPortion.Location = new System.Drawing.Point(395, 132);
-            this.DayPortion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.DayPortion.Name = "DayPortion";
-            this.DayPortion.Size = new System.Drawing.Size(94, 20);
-            this.DayPortion.TabIndex = 14;
-            this.DayPortion.Text = "Day portion:";
-            this.DayPortion.Click += new System.EventHandler(this.label1_Click);
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // FeederSize
+            // Faster
             // 
-            this.FeederSize.AutoSize = true;
-            this.FeederSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FeederSize.Location = new System.Drawing.Point(395, 177);
-            this.FeederSize.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.FeederSize.Name = "FeederSize";
-            this.FeederSize.Size = new System.Drawing.Size(96, 20);
-            this.FeederSize.TabIndex = 15;
-            this.FeederSize.Text = "Feeder size:";
+            this.Faster.Location = new System.Drawing.Point(295, 348);
+            this.Faster.Name = "Faster";
+            this.Faster.Size = new System.Drawing.Size(106, 39);
+            this.Faster.TabIndex = 14;
+            this.Faster.Text = "Faster";
+            this.Faster.UseVisualStyleBackColor = true;
+            this.Faster.Click += new System.EventHandler(this.Faster_Click);
             // 
-            // fs
+            // Slower
             // 
-            this.fs.Location = new System.Drawing.Point(510, 177);
-            this.fs.Margin = new System.Windows.Forms.Padding(1);
-            this.fs.Name = "fs";
-            this.fs.Size = new System.Drawing.Size(47, 20);
-            this.fs.TabIndex = 16;
-            this.fs.TextChanged += new System.EventHandler(this.fs_TextChanged);
+            this.Slower.Location = new System.Drawing.Point(428, 348);
+            this.Slower.Name = "Slower";
+            this.Slower.Size = new System.Drawing.Size(94, 39);
+            this.Slower.TabIndex = 15;
+            this.Slower.Text = "Slower";
+            this.Slower.UseVisualStyleBackColor = true;
+            this.Slower.Click += new System.EventHandler(this.Slower_Click);
             // 
-            // tm
+            // Time
             // 
-            this.tm.AutoSize = true;
-            this.tm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tm.Location = new System.Drawing.Point(22, 218);
-            this.tm.Name = "tm";
-            this.tm.Size = new System.Drawing.Size(136, 20);
-            this.tm.TabIndex = 20;
-            this.tm.Text = "Time Increment: 1";
-            this.tm.Click += new System.EventHandler(this.tm_Click);
+            this.Time.Location = new System.Drawing.Point(-2, 0);
+            this.Time.Name = "Time";
+            this.Time.Size = new System.Drawing.Size(134, 26);
+            this.Time.TabIndex = 17;
             // 
-            // timeMult
+            // ManualFeeding
             // 
-            this.timeMult.Location = new System.Drawing.Point(12, 241);
-            this.timeMult.Maximum = 100000;
-            this.timeMult.Minimum = 1;
-            this.timeMult.Name = "timeMult";
-            this.timeMult.Size = new System.Drawing.Size(424, 45);
-            this.timeMult.TabIndex = 21;
-            this.timeMult.Value = 18;
-            this.timeMult.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.ManualFeeding.Location = new System.Drawing.Point(622, 253);
+            this.ManualFeeding.Name = "ManualFeeding";
+            this.ManualFeeding.Size = new System.Drawing.Size(100, 26);
+            this.ManualFeeding.TabIndex = 18;
+            // 
+            // FeedNow
+            // 
+            this.FeedNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.FeedNow.Location = new System.Drawing.Point(728, 247);
+            this.FeedNow.Name = "FeedNow";
+            this.FeedNow.Size = new System.Drawing.Size(105, 39);
+            this.FeedNow.TabIndex = 19;
+            this.FeedNow.Text = "FeedNow";
+            this.FeedNow.UseVisualStyleBackColor = false;
+            this.FeedNow.Click += new System.EventHandler(this.FeedNow_Click);
             // 
             // Simulation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 292);
-            this.Controls.Add(this.timeMult);
-            this.Controls.Add(this.tm);
-            this.Controls.Add(this.fs);
-            this.Controls.Add(this.FeederSize);
-            this.Controls.Add(this.DayPortion);
+            this.ClientSize = new System.Drawing.Size(861, 449);
+            this.Controls.Add(this.FeedNow);
+            this.Controls.Add(this.ManualFeeding);
+            this.Controls.Add(this.Time);
+            this.Controls.Add(this.Slower);
+            this.Controls.Add(this.Faster);
             this.Controls.Add(this.mf);
             this.Controls.Add(this.Feeders);
             this.Controls.Add(this.back1);
             this.Controls.Add(this.feedersList);
-            this.Controls.Add(this.dp);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.FullFeeder);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Simulation";
             this.Text = "Simulation";
             this.Load += new System.EventHandler(this.Simulation_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.timeMult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,14 +281,16 @@ namespace LoginForm
         private System.Windows.Forms.Button stop;
         private System.Windows.Forms.ComboBox feedersList;
         private System.Windows.Forms.Button back1;
-        private System.Windows.Forms.Label food;
-        private System.Windows.Forms.Label days;
         private System.Windows.Forms.Label Feeders;
         private System.Windows.Forms.Label mf;
         private System.Windows.Forms.Label DayPortion;
         private System.Windows.Forms.Label FeederSize;
         private System.Windows.Forms.TextBox fs;
-        private System.Windows.Forms.Label tm;
-        private System.Windows.Forms.TrackBar timeMult;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button Faster;
+        private System.Windows.Forms.Button Slower;
+        private System.Windows.Forms.TextBox Time;
+        private System.Windows.Forms.TextBox ManualFeeding;
+        private System.Windows.Forms.Button FeedNow;
     }
 }

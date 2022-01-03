@@ -10,6 +10,5 @@ namespace Models
     interface ICatService
     {
         void Eat(Feeder feeder);
-        void Meow(/*Feeder*/);
     }
 }

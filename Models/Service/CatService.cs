@@ -7,26 +7,22 @@ using System.Threading.Tasks;
 
 namespace Models.Service
 {
-    class CatService : ICatService
+    public class CatService : ICatService
     {
         public Cat ThisCat = new Cat();
+        public bool Meow { get; private set; }
         public CatService(string CatName)
         {
             ThisCat.Name = CatName;
             ThisCat.TimeToEat = new DateTime();
             ThisCat.TimeToEat = DateTime.Now;
-            ThisCat.TimeToEat.AddHours(2);
+            ThisCat.TimeToEat = ThisCat.TimeToEat.AddHours(2);
 
         }
         public void Eat(Feeder feeder)
         {
-            //if (feeder.IsThisFeederEmpty())
-            //    Meow(/*Feeder*/);
-            //else feeder.EmptyBowl();
-        }
-        public void Meow(/*Feeder*/)
-        {
-            //Meow
+            if (feeder.EmptyBowl()) Meow = false;
+            else Meow = true;
         }
     }
 }
