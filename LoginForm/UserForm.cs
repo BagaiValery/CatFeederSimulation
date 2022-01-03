@@ -43,5 +43,10 @@ namespace LoginForm
         {
             lf.Show();
         }
+
+        private void UserForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -60,3 +60,4 @@ C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Presenter\obj\Debug
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Presenter\obj\Debug\Presenter.csproj.CopyComplete
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Presenter\obj\Debug\Presenter.dll
 C:\Users\Lerika\Documents\ТП\CatFeeder\CatFeederSimulation\Presenter\obj\Debug\Presenter.pdb
+C:\Users\EL LI\Desktop\Cat\Presenter\bin\Debug\System.Numerics.Vectors.dll

@@ -17,7 +17,11 @@ namespace LoginForm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new NewFedder());
+=======
+            Application.Run(new Authorization());
+>>>>>>> 08afccf2bb7063f08664274f04a352fba444ef37
         }
     }
 }

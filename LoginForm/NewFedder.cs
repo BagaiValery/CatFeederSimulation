@@ -52,18 +52,27 @@ namespace LoginForm
 
         private void back_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Authorization auth = new Authorization();
-            auth.Show();
+            this.Hide();
+       //     Authorization auth = new Authorization();
+       //     auth.Show();
         }
 
         private void userList_DropDown(object sender, EventArgs e)
         {
             FeederPresenter users = new FeederPresenter(this);
+<<<<<<< HEAD
             userList.DataSource = users.Users();
             userList.DisplayMember = "login";
             //userList.ValueMember = "id";
 
+=======
+            int c = users.MessCount();
+            string[] U = new string[c];
+            U = users.Users();
+            userList.Items.Clear();
+            for (int i = 0; i < c; i++)
+                userList.Items.Add(U[i]);
+>>>>>>> 08afccf2bb7063f08664274f04a352fba444ef37
         }
 
         private void userList_SelectedIndexChanged(object sender, EventArgs e)

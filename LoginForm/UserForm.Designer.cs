@@ -48,7 +48,7 @@ namespace LoginForm
             this.ManualHandling.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ManualHandling.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ManualHandling.Location = new System.Drawing.Point(0, 0);
-            this.ManualHandling.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ManualHandling.Margin = new System.Windows.Forms.Padding(2);
             this.ManualHandling.Name = "ManualHandling";
             this.ManualHandling.Size = new System.Drawing.Size(533, 50);
             this.ManualHandling.TabIndex = 5;
@@ -69,7 +69,7 @@ namespace LoginForm
             this.Timetable.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Timetable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Timetable.Location = new System.Drawing.Point(0, 50);
-            this.Timetable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Timetable.Margin = new System.Windows.Forms.Padding(2);
             this.Timetable.Name = "Timetable";
             this.Timetable.Size = new System.Drawing.Size(533, 50);
             this.Timetable.TabIndex = 6;
@@ -90,7 +90,7 @@ namespace LoginForm
             this.ListOfFeeders.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ListOfFeeders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ListOfFeeders.Location = new System.Drawing.Point(0, 100);
-            this.ListOfFeeders.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ListOfFeeders.Margin = new System.Windows.Forms.Padding(2);
             this.ListOfFeeders.Name = "ListOfFeeders";
             this.ListOfFeeders.Size = new System.Drawing.Size(533, 50);
             this.ListOfFeeders.TabIndex = 7;
@@ -111,7 +111,7 @@ namespace LoginForm
             this.RevieLogs.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RevieLogs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.RevieLogs.Location = new System.Drawing.Point(0, 150);
-            this.RevieLogs.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RevieLogs.Margin = new System.Windows.Forms.Padding(2);
             this.RevieLogs.Name = "RevieLogs";
             this.RevieLogs.Size = new System.Drawing.Size(533, 50);
             this.RevieLogs.TabIndex = 8;
@@ -130,9 +130,10 @@ namespace LoginForm
             this.Controls.Add(this.Timetable);
             this.Controls.Add(this.ManualHandling);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserForm";
             this.Text = "UserForm";
+            this.Load += new System.EventHandler(this.UserForm_Load);
             this.ResumeLayout(false);
 
         }

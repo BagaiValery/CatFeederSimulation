@@ -6,14 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Models.Entity
 {
     public class DB
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=catfeeder");
-      //  MySqlConnection connection = new MySqlConnection("SERVER=localhost;DATABASE=catfeeder;UID=root;PASSWORD=root");
+        MySqlConnection connection = new MySqlConnection("server=localhost;username=root;password=root;database=catfeeder");
+        //        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=catfeeder");
 
 
+ 
         public void OpenConnection()
         {
             if (connection.State == System.Data.ConnectionState.Closed)
@@ -76,15 +78,38 @@ namespace Models.Entity
 
         public DataTable GetAll(string TableName, string column)
         {
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
+            /*   DataTable table = new DataTable();
+               MySqlDataAdapter adapter = new MySqlDataAdapter();
 
-            MySqlCommand commandChoose = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
+               MySqlCommand commandChoose = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
 
-            adapter.SelectCommand = commandChoose;
-            adapter.Fill(table);
+               adapter.SelectCommand = commandChoose;
+               adapter.Fill(table);
 
+               var values = new string[table.Rows.Count];
+
+<<<<<<< HEAD
             return table;
+=======
+               table.Rows.CopyTo(values, 0);
+              */
+
+            List<String> userData = new List<String>();
+            MySqlCommand cmd = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
+
+            connection.Open();
+            MySqlDataReader dbList = cmd.ExecuteReader();
+
+            while (dbList.Read())
+            {
+                userData.Add(dbList.GetString(column));
+            }
+            var values = new string[userData.Count];
+            for (int i = 0; i < userData.Count; i++)
+                values[i] = userData[i];
+            connection.Close();
+            return values;
+>>>>>>> 08afccf2bb7063f08664274f04a352fba444ef37
         }
 
         public int Add(string TableName, string first, string second, string valueFirst, string valueSecond)
