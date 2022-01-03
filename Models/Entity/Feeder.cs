@@ -34,6 +34,7 @@ namespace Models.Entity
         {
             if (!IsThisFeederEmpty())
             {
+                portion = MountOfFood < portion ? MountOfFood : portion;
                 MountOfFood -= portion;
                 FoodInBowl += portion;
                 return IsThisFeederEmpty();

@@ -50,6 +50,8 @@ namespace LoginForm
             this.Time = new System.Windows.Forms.TextBox();
             this.ManualFeeding = new System.Windows.Forms.TextBox();
             this.FeedNow = new System.Windows.Forms.Button();
+            this.portion = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -188,7 +190,7 @@ namespace LoginForm
             // 
             this.mf.AutoSize = true;
             this.mf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.mf.Location = new System.Drawing.Point(630, 204);
+            this.mf.Location = new System.Drawing.Point(50, 200);
             this.mf.Name = "mf";
             this.mf.Size = new System.Drawing.Size(178, 29);
             this.mf.TabIndex = 13;
@@ -228,7 +230,7 @@ namespace LoginForm
             // 
             // ManualFeeding
             // 
-            this.ManualFeeding.Location = new System.Drawing.Point(622, 253);
+            this.ManualFeeding.Location = new System.Drawing.Point(32, 256);
             this.ManualFeeding.Name = "ManualFeeding";
             this.ManualFeeding.Size = new System.Drawing.Size(100, 26);
             this.ManualFeeding.TabIndex = 18;
@@ -236,7 +238,7 @@ namespace LoginForm
             // FeedNow
             // 
             this.FeedNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.FeedNow.Location = new System.Drawing.Point(728, 247);
+            this.FeedNow.Location = new System.Drawing.Point(153, 250);
             this.FeedNow.Name = "FeedNow";
             this.FeedNow.Size = new System.Drawing.Size(105, 39);
             this.FeedNow.TabIndex = 19;
@@ -244,11 +246,29 @@ namespace LoginForm
             this.FeedNow.UseVisualStyleBackColor = false;
             this.FeedNow.Click += new System.EventHandler(this.FeedNow_Click);
             // 
+            // portion
+            // 
+            this.portion.Location = new System.Drawing.Point(714, 186);
+            this.portion.Name = "portion";
+            this.portion.Size = new System.Drawing.Size(100, 26);
+            this.portion.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(649, 189);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(59, 20);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Portion";
+            // 
             // Simulation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(861, 449);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.portion);
             this.Controls.Add(this.FeedNow);
             this.Controls.Add(this.ManualFeeding);
             this.Controls.Add(this.Time);
@@ -292,5 +312,7 @@ namespace LoginForm
         private System.Windows.Forms.TextBox Time;
         private System.Windows.Forms.TextBox ManualFeeding;
         private System.Windows.Forms.Button FeedNow;
+        private System.Windows.Forms.TextBox portion;
+        private System.Windows.Forms.Label label1;
     }
 }

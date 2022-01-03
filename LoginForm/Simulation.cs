@@ -59,6 +59,7 @@ namespace LoginForm
 
         private async void start_Click(object sender, EventArgs e)
         {
+//            bool success = Int32.TryParse(this.dp.Text, out maxFood);
             presenter.StartSimulation();
             SimStart = true;
         }
@@ -112,7 +113,7 @@ namespace LoginForm
             }
         }
 
-        public string FeedengText
+        public string FeedingText
         {
             get
             {
@@ -135,6 +136,17 @@ namespace LoginForm
             }
         }
 
+        public string PortionText
+        {
+            get
+            {
+                return portion.Text;
+            }
+            set
+            {
+                portion.Text = value;
+            }
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (SimStart)
@@ -162,7 +174,7 @@ namespace LoginForm
                     while (reader.Read())
                     {
                         dp.Text = reader["maxFood"].ToString();
-                        fs.Text = reader["portion"].ToString();
+                        portion.Text = reader["portion"].ToString();
                     }
                 }
             }
@@ -181,6 +193,10 @@ namespace LoginForm
         private void Simulation_Load(object sender, EventArgs e)
         {
             presenter = new SimulationPresenter(this);
+            PortionText = "0";
+            FeedingText = "0";
+            FeederText = "0";
+            BowlText = "0";
         }
 
         private void label1_Click(object sender, EventArgs e){}

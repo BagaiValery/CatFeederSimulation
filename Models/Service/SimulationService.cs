@@ -35,7 +35,6 @@ namespace Models.Service
         }
         private void SimEnvironment()
         {
-            feeder.FeedingSchedule.portion = 50;
 
             feeder.FeedingSchedule.FeedTime.Add(DateTime.Now.AddHours(1));
             while (SimStop == 0)

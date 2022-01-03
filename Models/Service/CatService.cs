@@ -15,8 +15,10 @@ namespace Models.Service
         {
             ThisCat.Name = CatName;
             ThisCat.TimeToEat = new DateTime();
-            ThisCat.TimeToEat = DateTime.Now;
-            ThisCat.TimeToEat = ThisCat.TimeToEat.AddHours(2);
+            ThisCat.TimeToEat = DateTime.Today;
+            if (DateTime.Now.Hour < 12 )
+                ThisCat.TimeToEat = ThisCat.TimeToEat.AddHours(12);
+            else ThisCat.TimeToEat = ThisCat.TimeToEat.AddDays(1);
 
         }
         public void Eat(Feeder feeder)

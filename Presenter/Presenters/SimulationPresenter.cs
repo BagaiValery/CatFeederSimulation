@@ -23,22 +23,41 @@ namespace Presenter.Presenters
         {
             _SimulationServise = new SimulationServise();
             _SimulationServise.StartSim();
-        }
-        public void StopSimulation()
-        {
-            _SimulationServise.StopSim();
-        }
-        public void FeedNow()
-        {
             try
             {
-                int portion = Int32.Parse(simulationView.FeedengText);
-                _SimulationServise.feeder.Feed(portion);
+                _SimulationServise.feeder.MountOfFood = int.Parse(simulationView.FeederText);
             }
             catch (FormatException)
             {
-                simulationView.FeedengText = "Error";
+                _SimulationServise.feeder.MountOfFood = 100;
             }
+            try
+            {
+                _SimulationServise.feeder.FeedingSchedule.portion = int.Parse(simulationView.PortionText);
+            }
+            catch (FormatException)
+            {
+                _SimulationServise.feeder.portion = 50;
+                simulationView.PortionText = "50";
+            }
+        }
+        public void StopSimulation()
+        {
+            if (_SimulationServise != null)
+                _SimulationServise.StopSim();
+        }
+        public void FeedNow()
+        {
+            if (_SimulationServise != null)
+                try
+                {
+                int portion = int.Parse(simulationView.FeedingText);
+                _SimulationServise.feeder.Feed(portion);
+                }
+                catch (FormatException)
+                {
+                simulationView.FeedingText = "Error";
+                }
         }
         public void PresentFeeder()
         {
@@ -61,15 +80,18 @@ namespace Presenter.Presenters
         }
         public void BoostUp()
         {
-            _SimulationServise.TimeBoostUp();
+            if (_SimulationServise != null)
+                _SimulationServise.TimeBoostUp();
         }
         public void BoostDown()
         {
-            _SimulationServise.TimeBoostDown();
+            if (_SimulationServise != null)
+                _SimulationServise.TimeBoostDown();
         }
         public void FoolFeeder()
         {
-            _SimulationServise.feeder.MakeFull();
+            if (_SimulationServise != null)
+                _SimulationServise.feeder.MakeFull();
         }
     }
 }
