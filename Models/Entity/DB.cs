@@ -91,21 +91,7 @@ namespace Models.Entity
                table.Rows.CopyTo(values, 0);
               */
 
-            List<String> userData = new List<String>();
-            MySqlCommand cmd = new MySqlCommand("SELECT `" + column + "` FROM `" + TableName + "`", connection);
 
-            connection.Open();
-            MySqlDataReader dbList = cmd.ExecuteReader();
-
-            while (dbList.Read())
-            {
-                userData.Add(dbList.GetString(column));
-            }
-            var values = new string[userData.Count];
-            for (int i = 0; i < userData.Count; i++)
-                values[i] = userData[i];
-            connection.Close();
-            return values;
         }
 
         public int Add(string TableName, string first, string second, string valueFirst, string valueSecond)
