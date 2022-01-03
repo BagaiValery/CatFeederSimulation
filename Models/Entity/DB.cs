@@ -92,7 +92,7 @@ namespace Models.Entity
             return table;
 
         }
-
+         
         public int Add(string TableName, string first, string second, string valueFirst, string valueSecond)
         {
             MySqlCommand commandADD = new MySqlCommand("INSERT INTO `"+ TableName + "`(`" + first + "`, `" + second + "`) VALUES (@f, @s)", connection);

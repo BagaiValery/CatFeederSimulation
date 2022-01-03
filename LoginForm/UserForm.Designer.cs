@@ -30,11 +30,32 @@ namespace LoginForm
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserForm));
+            this.ListOfFeeders = new System.Windows.Forms.Button();
             this.ManualHandling = new System.Windows.Forms.Button();
             this.Timetable = new System.Windows.Forms.Button();
-            this.ListOfFeeders = new System.Windows.Forms.Button();
             this.RevieLogs = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // ListOfFeeders
+            // 
+            this.ListOfFeeders.BackColor = System.Drawing.Color.DimGray;
+            this.ListOfFeeders.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ListOfFeeders.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ListOfFeeders.FlatAppearance.BorderSize = 4;
+            this.ListOfFeeders.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.ListOfFeeders.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.ListOfFeeders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ListOfFeeders.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ListOfFeeders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ListOfFeeders.Location = new System.Drawing.Point(0, 100);
+            this.ListOfFeeders.Margin = new System.Windows.Forms.Padding(2);
+            this.ListOfFeeders.Name = "ListOfFeeders";
+            this.ListOfFeeders.Size = new System.Drawing.Size(533, 50);
+            this.ListOfFeeders.TabIndex = 7;
+            this.ListOfFeeders.Text = "Feeders";
+            this.ListOfFeeders.UseMnemonic = false;
+            this.ListOfFeeders.UseVisualStyleBackColor = false;
+            this.ListOfFeeders.Click += new System.EventHandler(this.ListOfFeeders_Click);
             // 
             // ManualHandling
             // 
@@ -78,27 +99,6 @@ namespace LoginForm
             this.Timetable.UseVisualStyleBackColor = false;
             this.Timetable.Click += new System.EventHandler(this.Timetable_Click);
             // 
-            // ListOfFeeders
-            // 
-            this.ListOfFeeders.BackColor = System.Drawing.Color.DimGray;
-            this.ListOfFeeders.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ListOfFeeders.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ListOfFeeders.FlatAppearance.BorderSize = 4;
-            this.ListOfFeeders.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.ListOfFeeders.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.ListOfFeeders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ListOfFeeders.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ListOfFeeders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ListOfFeeders.Location = new System.Drawing.Point(0, 100);
-            this.ListOfFeeders.Margin = new System.Windows.Forms.Padding(2);
-            this.ListOfFeeders.Name = "ListOfFeeders";
-            this.ListOfFeeders.Size = new System.Drawing.Size(533, 50);
-            this.ListOfFeeders.TabIndex = 7;
-            this.ListOfFeeders.Text = "Feeders";
-            this.ListOfFeeders.UseMnemonic = false;
-            this.ListOfFeeders.UseVisualStyleBackColor = false;
-            this.ListOfFeeders.Click += new System.EventHandler(this.ListOfFeeders_Click);
-            // 
             // RevieLogs
             // 
             this.RevieLogs.BackColor = System.Drawing.Color.DimGray;
@@ -139,10 +139,9 @@ namespace LoginForm
         }
 
         #endregion
-
+        private System.Windows.Forms.Button ListOfFeeders;
         private System.Windows.Forms.Button ManualHandling;
         private System.Windows.Forms.Button Timetable;
-        private System.Windows.Forms.Button ListOfFeeders;
         private System.Windows.Forms.Button RevieLogs;
     }
 }

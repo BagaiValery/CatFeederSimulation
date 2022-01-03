@@ -46,11 +46,10 @@ namespace LoginForm
             // NewFeederName
             // 
             this.NewFeederName.Location = new System.Drawing.Point(125, 177);
-            this.NewFeederName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.NewFeederName.Margin = new System.Windows.Forms.Padding(2);
             this.NewFeederName.Name = "NewFeederName";
             this.NewFeederName.Size = new System.Drawing.Size(272, 20);
             this.NewFeederName.TabIndex = 0;
-            
             // 
             // panel1
             // 
@@ -58,7 +57,7 @@ namespace LoginForm
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(533, 65);
             this.panel1.TabIndex = 1;
@@ -84,7 +83,7 @@ namespace LoginForm
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.button1.Location = new System.Drawing.Point(205, 220);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 46);
             this.button1.TabIndex = 2;
@@ -112,7 +111,7 @@ namespace LoginForm
             // back
             // 
             this.back.Location = new System.Drawing.Point(417, 246);
-            this.back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.back.Margin = new System.Windows.Forms.Padding(2);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(57, 20);
             this.back.TabIndex = 5;
@@ -135,7 +134,7 @@ namespace LoginForm
             // 
             this.userList.FormattingEnabled = true;
             this.userList.Location = new System.Drawing.Point(218, 111);
-            this.userList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.userList.Margin = new System.Windows.Forms.Padding(2);
             this.userList.Name = "userList";
             this.userList.Size = new System.Drawing.Size(82, 21);
             this.userList.TabIndex = 7;
@@ -168,7 +167,7 @@ namespace LoginForm
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.NewFeederName);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "NewFedder";
             this.Text = "NewFedder";
             this.Load += new System.EventHandler(this.NewFedder_Load);
