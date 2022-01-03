@@ -50,7 +50,7 @@ namespace LoginForm
             this.NewFeederName.Name = "NewFeederName";
             this.NewFeederName.Size = new System.Drawing.Size(272, 20);
             this.NewFeederName.TabIndex = 0;
-            this.NewFeederName.TextChanged += new System.EventHandler(this.NewFeederName_TextChanged);
+            
             // 
             // panel1
             // 

@@ -14,7 +14,6 @@ namespace LoginForm
     {
         NewFedder nf = new NewFedder();
         RegistrateForm rf = new RegistrateForm();
-        LogsForm lf = new LogsForm(); 
         Feeders f = new Feeders();
         public AdminForm()
         {
@@ -38,7 +37,7 @@ namespace LoginForm
 
         private void RevieLogs_Click(object sender, EventArgs e)
         {
-            lf.Show();
+
         }
 
         private void ListOfFeeders_Click(object sender, EventArgs e)
